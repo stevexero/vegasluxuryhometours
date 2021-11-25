@@ -1,5 +1,21 @@
+@import url('https://fonts.googleapis.com/css2?family=Alfa+Slab+One&family=Allura&family=Cinzel+Decorative:wght@700&family=Cinzel:wght@400;700&family=Montserrat:wght@300;400&family=Rajdhani:wght@700&display=swap');
+
 * {
   padding: 0;
   margin: 0;
   box-sizing: border-box;
+}
+
+:root {
+  --color-black: #000000;
+  --color-white: #ffffff;
+  --color-dark-gold: #deb16c;
+  --color-light-gold: #eccf81;
+  --color-dark-silver: #606167;
+  --color-light-silver: #c6c9d0;
+}
+
+body {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 400;
 }
