@@ -1,7 +1,11 @@
+import Hero from './sections/Hero';
+
+import './Home.css';
+
 const Home = () => {
   return (
     <div className='Home'>
-      <h1>Home Page</h1>
+      <Hero />
     </div>
   );
 };
