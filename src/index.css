@@ -21,9 +21,24 @@ body {
   font-weight: 400;
 }
 
+.text-white {
+  color: var(--color-white);
+}
+
+.rajdhani-bold-18 {
+  font-family: 'Rajdhani', sans-serif;
+  font-size: 1.125rem;
+  line-height: 22px;
+}
+
 .rajdhani-bold-24 {
   font-family: 'Rajdhani', sans-serif;
   font-size: 1.5rem;
+}
+
+.allura-regular-36 {
+  font-family: 'Allura', cursive;
+  font-size: 2.25rem;
 }
 
 .nav-link {
