@@ -1,15 +1,36 @@
-import './Hero.css';
+import { useEffect, useState } from 'react';
 
 import HeroImg from '../../assets/hero_img.jpeg';
 import Logo from '../../assets/vlht_logo.png';
 
+import './Hero.css';
+
 const Hero = () => {
+  const [logoWidth, setLogoWidth] = useState(414);
+
+  useEffect(() => {
+    window.addEventListener('scroll', handleScroll);
+  }, []);
+
+  const handleScroll = (e) => {
+    let scrollTop = window.scrollY,
+      minWidth = 130,
+      logoWidth = Math.max(minWidth, 414 - scrollTop);
+    console.log(scrollTop);
+    setLogoWidth(logoWidth);
+  };
+
   return (
     <header
       className='Hero'
       style={{ background: `url(${HeroImg}) no-repeat center center/cover` }}>
       <div className='overlay'>
-        <img className='Hero-logo' src={Logo} alt='logo' />
+        <img
+          className='Hero-logo'
+          src={Logo}
+          alt='logo'
+          style={{ height: `${logoWidth}px` }}
+        />
         <p className='rajdhani-bold-18 text-white'>
           Venture outside of the{' '}
           <span className='allura-regular-36'>glittering lights</span> of the
