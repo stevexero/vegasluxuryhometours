@@ -7,17 +7,26 @@ import './Hero.css';
 
 const Hero = () => {
   const [logoWidth, setLogoWidth] = useState(414);
+  const [logoVisibility, setLogoVisibility] = useState('visible');
 
   useEffect(() => {
     window.addEventListener('scroll', handleScroll);
   }, []);
 
-  const handleScroll = (e) => {
-    let scrollTop = window.scrollY,
-      minWidth = 130,
-      logoWidth = Math.max(minWidth, 414 - scrollTop);
-    console.log(scrollTop);
-    setLogoWidth(logoWidth);
+  const handleScroll = () => {
+    let scrollTop = window.scrollY;
+    if (scrollTop > 275) {
+      let minWidth = 130,
+        logoWidth = Math.max(minWidth, 414 - scrollTop);
+      setLogoWidth(logoWidth);
+    } else {
+      setLogoWidth(logoWidth);
+    }
+    if (scrollTop > 400) {
+      setLogoVisibility('hidden');
+    } else {
+      setLogoVisibility('visible');
+    }
   };
 
   return (
@@ -29,7 +38,11 @@ const Hero = () => {
           className='Hero-logo'
           src={Logo}
           alt='logo'
-          style={{ height: `${logoWidth}px` }}
+          style={{
+            width: `${logoWidth}px`,
+            visibility: logoVisibility,
+            transition: logoVisibility === 'hidden' ? '0s' : '0.2s',
+          }}
         />
         <p className='rajdhani-bold-18 text-white'>
           Venture outside of the{' '}
