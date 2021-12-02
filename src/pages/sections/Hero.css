@@ -18,3 +18,7 @@
   top: 0;
   left: 0;
 }
+
+.Hero-logo {
+  z-index: 11;
+}

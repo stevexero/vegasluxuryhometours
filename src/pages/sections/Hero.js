@@ -22,7 +22,7 @@ const Hero = () => {
     } else {
       setLogoWidth(logoWidth);
     }
-    if (scrollTop > 400) {
+    if (scrollTop > 430) {
       setLogoVisibility('hidden');
     } else {
       setLogoVisibility('visible');
