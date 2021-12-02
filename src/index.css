@@ -25,10 +25,14 @@ body {
   color: var(--color-white);
 }
 
+.text-medium-gold {
+  color: #ffd771;
+}
+
 .rajdhani-bold-18 {
   font-family: 'Rajdhani', sans-serif;
   font-size: 1.125rem;
-  line-height: 22px;
+  line-height: 2.75rem;
 }
 
 .rajdhani-bold-24 {

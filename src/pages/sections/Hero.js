@@ -22,7 +22,7 @@ const Hero = () => {
     } else {
       setLogoWidth(logoWidth);
     }
-    if (scrollTop > 430) {
+    if (scrollTop > 350) {
       setLogoVisibility('hidden');
     } else {
       setLogoVisibility('visible');
@@ -34,27 +34,40 @@ const Hero = () => {
       className='Hero'
       style={{ background: `url(${HeroImg}) no-repeat center center/cover` }}>
       <div className='overlay'>
-        <img
-          className='Hero-logo'
-          src={Logo}
-          alt='logo'
-          style={{
-            width: `${logoWidth}px`,
-            visibility: logoVisibility,
-            transition: logoVisibility === 'hidden' ? '0s' : '0.2s',
-          }}
-        />
-        <p className='rajdhani-bold-18 text-white'>
-          Venture outside of the{' '}
-          <span className='allura-regular-36'>glittering lights</span> of the
-          Vegas Strip and tour
-          <span>gorgeous homes</span> with scenic views along the way.
-        </p>
-        <p className='rajdhani-bold-18 text-white'>
-          You will love the <span>VIP</span> treatment as you get a taste of the
-          local Vegas
-          <span>luxury lifestyle!</span>
-        </p>
+        <div className='Hero-logo-container'>
+          <img
+            className='Hero-logo'
+            src={Logo}
+            alt='logo'
+            style={{
+              width: `${logoWidth}px`,
+              visibility: logoVisibility,
+              transition: logoVisibility === 'hidden' ? '0s' : '0.2s',
+            }}
+          />
+        </div>
+        <div className='Hero-text'>
+          <p className='rajdhani-bold-18 text-white'>
+            Venture outside of the{' '}
+            <span className='allura-regular-36 text-medium-gold'>
+              glittering lights
+            </span>{' '}
+            of the Vegas Strip and tour
+            <span className='rajdhani-bold-24 text-medium-gold'>
+              gorgeous homes
+            </span>{' '}
+            with scenic views along the way.
+          </p>
+          <br />
+          <p className='rajdhani-bold-18 text-white'>
+            You will love the{' '}
+            <span className='rajdhani-bold-24 text-medium-gold'>VIP</span>{' '}
+            treatment as you get a taste of the local Vegas
+            <span className='rajdhani-bold-24 text-medium-gold'>
+              luxury lifestyle!
+            </span>
+          </p>
+        </div>
       </div>
     </header>
   );

@@ -19,6 +19,18 @@
   left: 0;
 }
 
+.Hero-logo-container {
+  height: 332px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
 .Hero-logo {
   z-index: 11;
+}
+
+.Hero-text {
+  width: 557px;
+  text-align: center;
 }
