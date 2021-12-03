@@ -45,6 +45,12 @@ body {
   font-size: 2.25rem;
 }
 
+.alfa-slab-one-18 {
+  font-family: 'Alfa Slab One', cursive;
+  font-size: 18px;
+  letter-spacing: 3.5px;
+}
+
 .nav-link {
   color: var(--color-white);
   text-decoration: none;

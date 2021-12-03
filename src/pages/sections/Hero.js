@@ -1,7 +1,9 @@
 import { useEffect, useState } from 'react';
+import { Link } from 'react-router-dom';
 
 import HeroImg from '../../assets/hero_img.jpeg';
 import Logo from '../../assets/vlht_logo.png';
+import RightArrow from '../../assets/right_arrow.svg';
 
 import './Hero.css';
 
@@ -50,9 +52,9 @@ const Hero = () => {
           <p className='rajdhani-bold-18 text-white'>
             Venture outside of the{' '}
             <span className='allura-regular-36 text-medium-gold'>
-              glittering lights
+              glittering lights{' '}
             </span>{' '}
-            of the Vegas Strip and tour
+            of the Vegas Strip and tour{' '}
             <span className='rajdhani-bold-24 text-medium-gold'>
               gorgeous homes
             </span>{' '}
@@ -62,11 +64,14 @@ const Hero = () => {
           <p className='rajdhani-bold-18 text-white'>
             You will love the{' '}
             <span className='rajdhani-bold-24 text-medium-gold'>VIP</span>{' '}
-            treatment as you get a taste of the local Vegas
+            treatment as you get a taste of the local Vegas{' '}
             <span className='rajdhani-bold-24 text-medium-gold'>
               luxury lifestyle!
             </span>
           </p>
+          <Link to='/book' className='btn-hero alfa-slab-one-18'>
+            BOOK NOW <img src={RightArrow} alt='>' className='btn-arrow' />
+          </Link>
         </div>
       </div>
     </header>
