@@ -21,6 +21,10 @@ body {
   font-weight: 400;
 }
 
+a {
+  text-decoration: none;
+}
+
 .text-white {
   color: var(--color-white);
 }

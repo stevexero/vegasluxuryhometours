@@ -17,14 +17,14 @@ const Hero = () => {
 
   const handleScroll = () => {
     let scrollTop = window.scrollY;
-    if (scrollTop > 275) {
+    if (scrollTop > 200) {
       let minWidth = 130,
         logoWidth = Math.max(minWidth, 414 - scrollTop);
       setLogoWidth(logoWidth);
     } else {
       setLogoWidth(logoWidth);
     }
-    if (scrollTop > 350) {
+    if (scrollTop > 298) {
       setLogoVisibility('hidden');
     } else {
       setLogoVisibility('visible');
@@ -70,7 +70,8 @@ const Hero = () => {
             </span>
           </p>
           <Link to='/book' className='btn-hero alfa-slab-one-18'>
-            BOOK NOW <img src={RightArrow} alt='>' className='btn-arrow' />
+            BOOK NOW
+            <img src={RightArrow} alt='>' className='btn-arrow' />
           </Link>
         </div>
       </div>

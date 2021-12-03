@@ -33,14 +33,37 @@
 .Hero-text {
   width: 557px;
   text-align: center;
-}
-
-.btn-hero {
   display: flex;
+  flex-direction: column;
   align-items: center;
   justify-content: center;
 }
 
+.Hero-text p {
+  text-shadow: 0 4px 4px black;
+}
+
+.btn-hero {
+  width: 15rem;
+  padding: 1rem;
+  margin-top: 3rem;
+  background: linear-gradient(
+    105deg,
+    var(--color-dark-silver),
+    var(--color-light-silver)
+  );
+  color: var(--color-white);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 2px solid var(--color-light-gold);
+  border-radius: 50px;
+  text-shadow: 1px 1px 0 black;
+}
+
 .btn-arrow {
-  width: 2rem;
+  width: 1.4rem;
+  display: inline-block;
+  margin-top: 2.93px;
+  filter: drop-shadow(1px 1px 0 black);
 }

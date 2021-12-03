@@ -16,7 +16,7 @@ const Navbar = () => {
   const handleScroll = (e) => {
     let scrollTop = window.scrollY;
 
-    if (scrollTop > 350) {
+    if (scrollTop > 298) {
       setLogoVisibility('visible');
       setNavBackgroundColor('black');
     } else {
