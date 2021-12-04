@@ -17,9 +17,10 @@ const Hero = () => {
 
   const handleScroll = () => {
     let scrollTop = window.scrollY;
-    if (scrollTop > 200) {
+    if (scrollTop > 260) {
       let minWidth = 130,
-        logoWidth = Math.max(minWidth, 414 - scrollTop);
+        // logoWidth = Math.max(minWidth, 414 - scrollTop);
+        logoWidth = minWidth;
       setLogoWidth(logoWidth);
     } else {
       setLogoWidth(logoWidth);
