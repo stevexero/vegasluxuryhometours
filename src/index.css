@@ -65,3 +65,15 @@ a {
 .container-1100 {
   width: var(--container-width);
 }
+
+.pt-84 {
+  padding-top: 84px;
+}
+
+.pb-84 {
+  padding-bottom: 84px;
+}
+
+.ptb-84 {
+  padding: 84px 0;
+}
