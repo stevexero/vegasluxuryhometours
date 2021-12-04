@@ -1,5 +1,6 @@
 import { useEffect, useState } from 'react';
 import { Link } from 'react-router-dom';
+import { motion } from 'framer-motion';
 
 import HeroImg from '../../assets/hero_img.jpeg';
 import Logo from '../../assets/vlht_logo.png';
@@ -70,13 +71,21 @@ const Hero = () => {
               luxury lifestyle!
             </span>
           </p>
-          <Link to='/book' className='btn-hero alfa-slab-one-18'>
-            BOOK NOW
+          <motion.div whileHover={{
+            scale: 1.1,
+            transition: {
+              duration: 0.2,
+              type: 'spring',
+            },
+          }} style={{ marginTop: '3rem' }}>
+            <Link to='/book' className='btn-hero alfa-slab-one-18'>
+              BOOK NOW
             <img src={RightArrow} alt='>' className='btn-arrow' />
-          </Link>
+            </Link>
+          </motion.div>
         </div>
       </div>
-    </header>
+    </header >
   );
 };
 

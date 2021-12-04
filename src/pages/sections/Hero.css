@@ -46,7 +46,7 @@
 .btn-hero {
   width: 15rem;
   padding: 1rem;
-  margin-top: 3rem;
+  /* margin-top: 3rem; */
   background: linear-gradient(
     105deg,
     var(--color-dark-silver),
@@ -59,6 +59,7 @@
   border: 2px solid var(--color-light-gold);
   border-radius: 50px;
   text-shadow: 1px 1px 0 black;
+  box-shadow: 0 4px 0 black;
 }
 
 .btn-arrow {

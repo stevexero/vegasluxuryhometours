@@ -37,11 +37,13 @@ a {
   font-family: 'Rajdhani', sans-serif;
   font-size: 1.125rem;
   line-height: 2.75rem;
+  letter-spacing: 1px;
 }
 
 .rajdhani-bold-24 {
   font-family: 'Rajdhani', sans-serif;
   font-size: 1.5rem;
+  letter-spacing: 2px;
 }
 
 .allura-regular-36 {
