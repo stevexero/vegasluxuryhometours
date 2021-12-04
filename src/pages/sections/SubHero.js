@@ -3,7 +3,9 @@ import './SubHero.css';
 const SubHero = () => {
   return (
     <div className='SubHero'>
-      <h1>SubHero</h1>
+      <div className="container-1100 SubHero-container">
+        <h1>Sub Hero</h1>
+      </div>
     </div>
   );
 };
