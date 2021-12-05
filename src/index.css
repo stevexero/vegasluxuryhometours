@@ -33,6 +33,18 @@ a {
   color: #ffd771;
 }
 
+.text-dark-gold {
+  color: var(--color-dark-gold);
+}
+
+.text-light-silver {
+  color: var(--color-light-silver);
+}
+
+.text-dark-silver {
+  color: var(--color-dark-silver);
+}
+
 .rajdhani-bold-18 {
   font-family: 'Rajdhani', sans-serif;
   font-size: 1.125rem;
@@ -55,6 +67,32 @@ a {
   font-family: 'Alfa Slab One', cursive;
   font-size: 18px;
   letter-spacing: 3.5px;
+}
+
+.cinzel-regular-56 {
+  font-family: 'Cinzel', serif;
+  font-size: 56px;
+  font-weight: 400;
+  line-height: 64px;
+}
+
+.cinzel-bold-56 {
+  font-family: 'Cinzel', serif;
+  font-size: 56px;
+  font-weight: bold;
+  line-height: 64px;
+}
+
+.cinzel-decorative-bold-18 {
+  font-family: 'Cinzel Decorative', cursive;
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.montserrat-regular-14 {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 14px;
+  line-height: 28px;
 }
 
 .nav-link {

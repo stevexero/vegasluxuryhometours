@@ -6,8 +6,28 @@
 }
 
 .SubHero-container {
-  background: red;
   display: flex;
   align-items: center;
   justify-content: space-between;
+}
+
+.SubHero-left {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: space-between;
+}
+
+.SubHero-left-header {
+  display: flex;
+  align-items: center;
+}
+
+.SubHero-right {
+  width: 50%;
+}
+
+.SubHero-left-icon {
+  width: 105px;
 }
