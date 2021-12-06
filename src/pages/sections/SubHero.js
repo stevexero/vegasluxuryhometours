@@ -1,6 +1,12 @@
 import { Link } from 'react-router-dom';
 
 import Champagne from '../../assets/champagne.svg';
+import img1 from '../../assets/subhero1.jpeg';
+import img2 from '../../assets/subhero2.jpeg';
+import img3 from '../../assets/subhero3.jpeg';
+import img4 from '../../assets/subhero4.jpeg';
+import img5 from '../../assets/hero_img.jpeg';
+import img6 from '../../assets/subhero6.jpeg';
 
 import './SubHero.css';
 
@@ -33,7 +39,14 @@ const SubHero = () => {
             </Link>
           </div>
         </div>
-        <div className='SubHero-right'>Right</div>
+        <div className='SubHero-right'>
+          <img src={img1} alt='img' className='SubHero-left-img' />
+          <img src={img2} alt='img' className='SubHero-left-img' />
+          <img src={img3} alt='img' className='SubHero-left-img' />
+          <img src={img4} alt='img' className='SubHero-left-img' />
+          <img src={img5} alt='img' className='SubHero-left-img' />
+          <img src={img6} alt='img' className='SubHero-left-img' />
+        </div>
       </div>
     </div>
   );

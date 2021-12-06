@@ -12,7 +12,8 @@
 }
 
 .SubHero-left {
-  width: 50%;
+  width: 55%;
+  height: 19rem;
   display: flex;
   flex-direction: column;
   align-items: flex-start;
@@ -20,14 +21,35 @@
 }
 
 .SubHero-left-header {
+  margin-top: -2rem;
   display: flex;
   align-items: center;
 }
 
-.SubHero-right {
-  width: 50%;
-}
-
 .SubHero-left-icon {
   width: 105px;
+  margin-left: -0.75rem;
+}
+
+.SubHero-left-title {
+  margin-left: 1rem;
+}
+
+.SubHero-left-img {
+  width: 129px;
+  height: 129px;
+}
+
+.SubHero-left-text {
+  margin-top: -2rem;
+  margin-right: 2rem;
+}
+
+.SubHero-right {
+  width: 45%;
+  height: 19rem;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 28px;
+  justify-items: end;
 }
