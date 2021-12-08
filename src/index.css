@@ -25,6 +25,10 @@ a {
   text-decoration: none;
 }
 
+.page-link {
+  text-decoration: underline;
+}
+
 .text-white {
   color: var(--color-white);
 }

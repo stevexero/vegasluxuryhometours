@@ -4,6 +4,8 @@ import Navbar from './components/Navbar';
 import Footer from './components/Footer';
 
 import Home from './pages/Home';
+import Attributions from './pages/Attributions';
+
 import './App.css';
 
 function App() {
@@ -13,6 +15,9 @@ function App() {
       <Switch>
         <Route exact path='/'>
           <Home />
+        </Route>
+        <Route exact path='/attributions'>
+          <Attributions />
         </Route>
       </Switch>
       <Footer />

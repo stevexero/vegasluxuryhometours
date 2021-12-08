@@ -34,7 +34,7 @@ const SubHero = () => {
           <div className='SubHero-left-footer'>
             <Link
               to='/book'
-              className='SubHero-left-link cinzel-decorative-bold-18 text-dark-gold'>
+              className='SubHero-left-link page-link cinzel-decorative-bold-18 text-dark-gold'>
               BOOK YOUR TOUR NOW
             </Link>
           </div>

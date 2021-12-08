@@ -1,0 +1,13 @@
+.Attributions {
+  background: red;
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+
+.Attributions .Attributions-container img {
+  width: 50px;
+}
