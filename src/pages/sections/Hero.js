@@ -71,21 +71,23 @@ const Hero = () => {
               luxury lifestyle!
             </span>
           </p>
-          <motion.div whileHover={{
-            scale: 1.1,
-            transition: {
-              duration: 0.2,
-              type: 'spring',
-            },
-          }} style={{ marginTop: '3rem' }}>
+          <motion.div
+            whileHover={{
+              scale: 1.1,
+              transition: {
+                duration: 0.2,
+                type: 'spring',
+              },
+            }}
+            style={{ marginTop: '3rem' }}>
             <Link to='/book' className='btn-hero alfa-slab-one-18'>
               BOOK NOW
-            <img src={RightArrow} alt='>' className='btn-arrow' />
+              <img src={RightArrow} alt='>' className='btn-arrow' />
             </Link>
           </motion.div>
         </div>
       </div>
-    </header >
+    </header>
   );
 };
 

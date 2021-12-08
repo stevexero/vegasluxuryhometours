@@ -1,3 +1,10 @@
-.Reviews {
+/* .Reviews {
   height: 100vh;
+  background: var(--color-dark-silver);
+} */
+
+.Reviews-profile-image {
+  width: 56px;
+  height: 56px;
+  border-radius: 50%;
 }

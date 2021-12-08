@@ -33,6 +33,10 @@ a {
   color: var(--color-white);
 }
 
+.text-light-gold {
+  color: var(--color-light-gold);
+}
+
 .text-medium-gold {
   color: #ffd771;
 }
@@ -93,6 +97,13 @@ a {
   font-weight: bold;
 }
 
+.montserrat-light-14 {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 300;
+  font-size: 14px;
+  line-height: 28px;
+}
+
 .montserrat-regular-14 {
   font-family: 'Montserrat', sans-serif;
   font-size: 14px;
@@ -118,4 +129,8 @@ a {
 
 .ptb-84 {
   padding: 84px 0;
+}
+
+.mt-32 {
+  margin-top: 32px;
 }
