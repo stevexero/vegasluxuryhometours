@@ -14,13 +14,14 @@ const Hero = () => {
 
   useEffect(() => {
     window.addEventListener('scroll', handleScroll);
+
+    return () => window.removeEventListener('scroll', handleScroll);
   }, []);
 
   const handleScroll = () => {
     let scrollTop = window.scrollY;
     if (scrollTop > 260) {
       let minWidth = 130,
-        // logoWidth = Math.max(minWidth, 414 - scrollTop);
         logoWidth = minWidth;
       setLogoWidth(logoWidth);
     } else {

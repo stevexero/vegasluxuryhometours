@@ -1,4 +1,4 @@
-import { Parallax, Background } from 'react-parallax';
+import { Parallax } from 'react-parallax';
 
 import ReviewsBackground from '../../assets/reviews_bg.jpeg';
 import Aaron from '../../assets/aaron.jpeg';
