@@ -1,0 +1,12 @@
+.StoryCardPhoto {
+  width: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.StoryCardPhoto:after {
+  content: '';
+  display: block;
+  padding-bottom: 100%;
+}

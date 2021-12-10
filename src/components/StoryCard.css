@@ -1,0 +1,13 @@
+.StoryCard {
+  width: 50%;
+  background: var(--color-light-gold);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.StoryCard:after {
+  content: '';
+  display: block;
+  padding-bottom: 100%;
+}

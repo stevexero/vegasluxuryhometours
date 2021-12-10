@@ -1,3 +1,10 @@
 /* .Story {
   height: 100vh;
 } */
+
+.StorySection {
+  width: 100%;
+  display: flex;
+  /* justify-content: space-evenly; */
+  align-items: center;
+}
