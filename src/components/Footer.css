@@ -71,3 +71,9 @@
 .Footer-body-right {
   width: 17.5%;
 }
+
+.Footer-foot {
+  width: 1100px;
+  border-top: 1px solid var(--color-light-silver);
+  text-align: center;
+}

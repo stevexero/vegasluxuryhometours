@@ -135,6 +135,10 @@ a {
   padding: 168px 0;
 }
 
+.mt-16 {
+  margin-top: 16px;
+}
+
 .mt-32 {
   margin-top: 32px;
 }
