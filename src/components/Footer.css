@@ -52,3 +52,22 @@
 .btn-footer:hover {
   cursor: pointer;
 }
+
+.Footer-body {
+  width: 1100px;
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+}
+
+.Footer-body-left {
+  width: 50%;
+}
+
+.Footer-body-center {
+  width: 42.5%;
+}
+
+.Footer-body-right {
+  width: 17.5%;
+}

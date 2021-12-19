@@ -21,7 +21,16 @@ const Footer = () => {
         </motion.button>
       </div>
       <div className='Footer-body ptb-84'>
-        <Link to='/attributions'>Attributions</Link>
+        <div className='Footer-body-left'>
+          <h3 className='rajdhani-bold-18 text-white'>FOLLOW US!</h3>
+        </div>
+        <div className='Footer-body-center'>
+          <h3 className='rajdhani-bold-18 text-white'>COMPANY</h3>
+        </div>
+        <div className='Footer-body-right'>
+          <h3 className='rajdhani-bold-18 text-white'>SUPPORT</h3>
+          <Link to='/attributions'>Attributions</Link>
+        </div>
       </div>
       <div className='Footer-foot'>foot</div>
     </footer>
