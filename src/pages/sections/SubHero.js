@@ -1,4 +1,5 @@
 import { Link } from 'react-router-dom';
+import { useMediaQuery } from 'react-responsive';
 
 import Champagne from '../../assets/champagne.svg';
 import img1 from '../../assets/subhero1.jpeg';
@@ -11,6 +12,8 @@ import img6 from '../../assets/subhero6.jpeg';
 import './SubHero.css';
 
 const SubHero = () => {
+  const isMobile = useMediaQuery({ query: '(max-width: 414px)' });
+
   return (
     <div className='SubHero'>
       <div className='container-1100 SubHero-container ptb-84'>
@@ -39,14 +42,16 @@ const SubHero = () => {
             </Link>
           </div>
         </div>
-        <div className='SubHero-right'>
-          <img src={img1} alt='img' className='SubHero-left-img' />
-          <img src={img2} alt='img' className='SubHero-left-img' />
-          <img src={img3} alt='img' className='SubHero-left-img' />
-          <img src={img4} alt='img' className='SubHero-left-img' />
-          <img src={img5} alt='img' className='SubHero-left-img' />
-          <img src={img6} alt='img' className='SubHero-left-img' />
-        </div>
+        {isMobile ? null : (
+          <div className='SubHero-right'>
+            <img src={img1} alt='img' className='SubHero-left-img' />
+            <img src={img2} alt='img' className='SubHero-left-img' />
+            <img src={img3} alt='img' className='SubHero-left-img' />
+            <img src={img4} alt='img' className='SubHero-left-img' />
+            <img src={img5} alt='img' className='SubHero-left-img' />
+            <img src={img6} alt='img' className='SubHero-left-img' />
+          </div>
+        )}
       </div>
     </div>
   );

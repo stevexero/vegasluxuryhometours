@@ -77,3 +77,38 @@
   border-top: 1px solid var(--color-light-silver);
   text-align: center;
 }
+
+/* MOBILE */
+@media screen and (max-width: 414px) {
+  .Footer-head {
+    width: 100%;
+    flex-direction: column;
+  }
+
+  .btn-footer {
+    position: relative;
+  }
+
+  .Footer-body {
+    width: 100%;
+    flex-direction: column;
+  }
+
+  .Footer-body-left {
+    width: 100%;
+  }
+
+  .Footer-body-center {
+    width: 100%;
+  }
+
+  .Footer-body-right {
+    width: 100%;
+  }
+
+  .Footer-foot {
+    width: 100%;
+    border-top: none;
+    text-align: center;
+  }
+}
