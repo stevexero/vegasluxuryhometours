@@ -1,4 +1,5 @@
 import { Parallax } from 'react-parallax';
+import { useMediaQuery } from 'react-responsive';
 
 import ReviewsBackground from '../../assets/reviews_bg.jpeg';
 import Aaron from '../../assets/aaron.jpeg';
@@ -6,8 +7,10 @@ import Aaron from '../../assets/aaron.jpeg';
 import './Reviews.css';
 
 const Reviews = () => {
+  const isMobile = useMediaQuery({ query: '(max-width: 414px)' });
+
   const insideStyles = {
-    width: '1100px',
+    width: isMobile ? '300px' : '1100px',
     position: 'absolute',
     top: '50%',
     left: '50%',
@@ -24,8 +27,10 @@ const Reviews = () => {
         <div style={{ height: 600, background: 'rgba(0,0,0,0.75)' }}>
           <div style={insideStyles}>
             <h1
-              className='cinzel-regular-56 text-light-gold'
-              style={{ width: '1000px' }}>
+              className={`${
+                isMobile ? 'cinzel-regular-24' : 'cinzel-regular-56'
+              } text-light-gold`}
+              style={{ width: isMobile ? '300px' : '1000px' }}>
               “Every member of our group greatly enjoyed this tour.”
             </h1>
             <p className='montserrat-light-14 text-white mt-32'>
