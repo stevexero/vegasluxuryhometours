@@ -1,6 +1,7 @@
 import { useEffect, useState } from 'react';
 import { Link } from 'react-router-dom';
 import { motion } from 'framer-motion';
+import { useMediaQuery } from 'react-responsive';
 
 import HeroImg from '../../assets/hero_img.jpeg';
 import Logo from '../../assets/vlht_logo.png';
@@ -9,7 +10,9 @@ import RightArrow from '../../assets/right_arrow.svg';
 import './Hero.css';
 
 const Hero = () => {
-  const [logoWidth, setLogoWidth] = useState(414);
+  const isMobile = useMediaQuery({ query: '(max-width: 414px)' });
+
+  const [logoWidth, setLogoWidth] = useState(isMobile ? 278 : 414);
   const [logoVisibility, setLogoVisibility] = useState('visible');
 
   useEffect(() => {
@@ -19,18 +22,22 @@ const Hero = () => {
   }, []);
 
   const handleScroll = () => {
-    let scrollTop = window.scrollY;
-    if (scrollTop > 260) {
-      let minWidth = 130,
-        logoWidth = minWidth;
-      setLogoWidth(logoWidth);
+    if (isMobile) {
+      setLogoWidth(278);
     } else {
-      setLogoWidth(logoWidth);
-    }
-    if (scrollTop > 298) {
-      setLogoVisibility('hidden');
-    } else {
-      setLogoVisibility('visible');
+      let scrollTop = window.scrollY;
+      if (scrollTop > 260) {
+        let minWidth = 130,
+          logoWidth = minWidth;
+        setLogoWidth(logoWidth);
+      } else {
+        setLogoWidth(logoWidth);
+      }
+      if (scrollTop > 298) {
+        setLogoVisibility('hidden');
+      } else {
+        setLogoVisibility('visible');
+      }
     }
   };
 
@@ -53,21 +60,24 @@ const Hero = () => {
         </div>
         <div className='Hero-text'>
           <p className='rajdhani-bold-18 text-white'>
-            Venture outside of the{' '}
+            Venture outside of the {isMobile && <br />}
             <span className='allura-regular-36 text-medium-gold'>
               glittering lights{' '}
             </span>{' '}
-            of the Vegas Strip and tour{' '}
+            {isMobile && <br />}
+            of the Vegas Strip and tour {isMobile && <br />}
             <span className='rajdhani-bold-24 text-medium-gold'>
               gorgeous homes
             </span>{' '}
+            {isMobile && <br />}
             with scenic views along the way.
           </p>
           <br />
           <p className='rajdhani-bold-18 text-white'>
             You will love the{' '}
             <span className='rajdhani-bold-24 text-medium-gold'>VIP</span>{' '}
-            treatment as you get a taste of the local Vegas{' '}
+            treatment {isMobile && <br />} as you get a taste of the local Vegas{' '}
+            {isMobile && <br />}
             <span className='rajdhani-bold-24 text-medium-gold'>
               luxury lifestyle!
             </span>
