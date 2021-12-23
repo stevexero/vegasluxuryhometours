@@ -26,6 +26,7 @@ const Story = () => {
               r='236'
               g='207'
               b='129'
+              textColor='text-dark-silver'
             />
           </div>
           <div className='StorySectionMobile'>
@@ -36,6 +37,7 @@ const Story = () => {
               r='96'
               g='97'
               b='103'
+              textColor='text-light-gold'
             />
           </div>
           <div className='StorySectionMobile'>
@@ -46,6 +48,7 @@ const Story = () => {
               r='236'
               g='207'
               b='129'
+              textColor='text-dark-silver'
             />
           </div>
           <div className='StorySectionMobile'>
@@ -56,6 +59,7 @@ const Story = () => {
               r='96'
               g='97'
               b='103'
+              textColor='text-light-gold'
             />
           </div>
           <div className='StorySectionMobile'>
@@ -66,6 +70,7 @@ const Story = () => {
               r='236'
               g='207'
               b='129'
+              textColor='text-dark-silver'
             />
           </div>
         </>

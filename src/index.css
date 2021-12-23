@@ -84,6 +84,13 @@ a {
   line-height: 31px;
 }
 
+.cinzel-regular-48 {
+  font-family: 'Cinzel', serif;
+  font-size: 48px;
+  font-weight: 400;
+  line-height: 64px;
+}
+
 .cinzel-regular-56 {
   font-family: 'Cinzel', serif;
   font-size: 56px;
