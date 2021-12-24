@@ -72,4 +72,8 @@
   .Hero-text {
     width: 100%;
   }
+
+  .Hero-logo-container {
+    height: 200px;
+  }
 }

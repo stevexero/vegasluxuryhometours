@@ -16,10 +16,15 @@ const SubHero = () => {
 
   return (
     <div className='SubHero'>
-      <div className='container-1100 SubHero-container ptb-84'>
+      <div
+        className={`${
+          isMobile ? null : 'container-1100'
+        } SubHero-container ptb-84`}>
         <div className='SubHero-left'>
           <div className='SubHero-left-header'>
-            <img src={Champagne} alt='Bottle' className='SubHero-left-icon' />
+            {isMobile ? null : (
+              <img src={Champagne} alt='Bottle' className='SubHero-left-icon' />
+            )}
             <h1 className='SubHero-left-title cinzel-regular-56 text-light-silver'>
               A Taste of{' '}
               <span className='cinzel-bold-56 text-dark-gold'>VIP</span>
