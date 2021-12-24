@@ -22,3 +22,17 @@
   display: flex;
   justify-content: space-between;
 }
+
+.Navbar-hamburger {
+  color: var(--color-light-gold);
+}
+
+@media screen and (max-width: 414px) {
+  .Navbar {
+    justify-content: flex-start;
+    position: fixed;
+    top: 1rem;
+    left: 1rem;
+    z-index: 10;
+  }
+}

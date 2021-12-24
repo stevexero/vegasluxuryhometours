@@ -1,6 +1,8 @@
 import { useEffect, useState } from 'react';
 import { Link } from 'react-router-dom';
 import { useMediaQuery } from 'react-responsive';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faBars } from '@fortawesome/free-solid-svg-icons';
 
 import Logo from '../assets/vlht_logo.png';
 
@@ -39,7 +41,13 @@ const Navbar = () => {
       className='Navbar'
       style={{ background: navBackgroundColor, transition: '0.3s' }}>
       {isMobile ? (
-        <div>mNav</div>
+        <div>
+          <FontAwesomeIcon
+            icon={faBars}
+            size='2x'
+            className='Navbar-hamburger'
+          />
+        </div>
       ) : (
         <div className='Navbar-container'>
           <div className='Navbar-left'>
