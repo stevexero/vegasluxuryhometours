@@ -18,16 +18,24 @@ const SubHero = () => {
     <div className='SubHero'>
       <div
         className={`${
-          isMobile ? null : 'container-1100'
+          isMobile ? '' : 'container-1100'
         } SubHero-container ptb-84`}>
         <div className='SubHero-left'>
           <div className='SubHero-left-header'>
             {isMobile ? null : (
               <img src={Champagne} alt='Bottle' className='SubHero-left-icon' />
             )}
-            <h1 className='SubHero-left-title cinzel-regular-56 text-light-silver'>
+            <h1
+              className={`SubHero-left-title ${
+                isMobile ? 'cinzel-regular-36' : 'cinzel-regular-56'
+              } text-light-silver`}>
               A Taste of{' '}
-              <span className='cinzel-bold-56 text-dark-gold'>VIP</span>
+              <span
+                className={`${
+                  isMobile ? 'cinzel-bold-36' : 'cinzel-bold-56'
+                } text-dark-gold`}>
+                VIP
+              </span>
             </h1>
           </div>
           <div className='SubHero-left-body'>

@@ -53,3 +53,20 @@
   gap: 28px;
   justify-items: end;
 }
+
+@media screen and (max-width: 414px) {
+  .SubHero-left {
+    width: 100%;
+    /* height: 19rem; */
+    /* display: flex; */
+    /* flex-direction: column; */
+    align-items: center;
+    /* justify-content: space-between; */
+  }
+
+  .SubHero-left-text {
+    text-align: justify;
+    padding: 0 2rem;
+    margin-right: 0;
+  }
+}

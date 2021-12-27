@@ -105,6 +105,13 @@ a {
   line-height: 64px;
 }
 
+.cinzel-bold-36 {
+  font-family: 'Cinzel', serif;
+  font-size: 36px;
+  font-weight: bold;
+  line-height: 64px;
+}
+
 .cinzel-bold-56 {
   font-family: 'Cinzel', serif;
   font-size: 56px;
