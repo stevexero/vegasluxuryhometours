@@ -12,3 +12,15 @@
   justify-content: center;
   text-align: center;
 }
+
+@media screen and (max-width: 414px) {
+  .BottomHero {
+    padding: 4rem 0;
+  }
+
+  .BottomHero-container p {
+    text-align: left;
+    line-height: 43px;
+    margin: 0 2.4rem;
+  }
+}

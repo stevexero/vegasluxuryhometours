@@ -1,10 +1,11 @@
-/* .Reviews {
-  height: 100vh;
-  background: var(--color-dark-silver);
-} */
-
 .Reviews-profile-image {
   width: 56px;
   height: 56px;
   border-radius: 50%;
+}
+
+@media screen and (max-width: 414px) {
+  .Reviews-text-session p {
+    text-align: justify;
+  }
 }

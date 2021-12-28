@@ -24,8 +24,13 @@ const Reviews = () => {
   return (
     <div className='Reviews'>
       <Parallax bgImage={ReviewsBackground} strength={500}>
-        <div style={{ height: 600, background: 'rgba(0,0,0,0.75)' }}>
-          <div style={insideStyles}>
+        <div
+          style={{
+            height: isMobile ? 800 : 600,
+            background: 'rgba(0,0,0,0.75)',
+          }}
+          className='Reviews-text-container'>
+          <div style={insideStyles} className='Reviews-text-session'>
             <h1
               className={`${
                 isMobile ? 'cinzel-regular-24' : 'cinzel-regular-56'
