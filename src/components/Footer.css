@@ -82,7 +82,18 @@
 @media screen and (max-width: 414px) {
   .Footer-head {
     width: 100%;
+    padding: 0 2rem;
     flex-direction: column;
+  }
+
+  .Footer-head input[type='text'] {
+    font-size: 1rem;
+  }
+
+  .btn-footer {
+    width: 100%;
+    margin-top: 1rem;
+    position: relative;
   }
 
   .btn-footer {
@@ -91,6 +102,7 @@
 
   .Footer-body {
     width: 100%;
+    margin-left: 5rem;
     flex-direction: column;
   }
 

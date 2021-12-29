@@ -1,11 +1,14 @@
 import { Link } from 'react-router-dom';
 import { motion } from 'framer-motion';
+import { useMediaQuery } from 'react-responsive';
 
 import IgLogo from '../assets/ig.png';
 
 import './Footer.css';
 
 const Footer = () => {
+  const isMobile = useMediaQuery({ query: '(max-width: 414px)' });
+
   return (
     <footer className='Footer ptb-84'>
       <div className='Footer-head'>
@@ -52,7 +55,8 @@ const Footer = () => {
       </div>
       <div className='Footer-foot'>
         <p className='mt-32 montserrat-light-14 text-white'>
-          COPYRIGHT &copy; 2021 - VEGAS LUXURY HOME TOURS
+          COPYRIGHT &copy; 2021 {isMobile ? <br /> : '-'} VEGAS LUXURY HOME
+          TOURS
         </p>
       </div>
     </footer>
