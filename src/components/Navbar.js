@@ -13,6 +13,7 @@ const Navbar = () => {
 
   const [logoVisibility, setLogoVisibility] = useState('hidden');
   const [navBackgroundColor, setNavBackgroundColor] = useState('transparent');
+  const [isMenuOpen, setIsMenuOpen] = useState(false);
 
   useEffect(() => {
     window.addEventListener('scroll', handleScroll);
@@ -36,12 +37,16 @@ const Navbar = () => {
     }
   };
 
+  const handleClick = (e) => {
+    setIsMenuOpen((isMenuOpen) => !isMenuOpen);
+  };
+
   return (
     <nav
       className='Navbar'
       style={{ background: navBackgroundColor, transition: '0.3s' }}>
       {isMobile ? (
-        <div>
+        <div onClick={handleClick}>
           <FontAwesomeIcon
             icon={faBars}
             size='2x'

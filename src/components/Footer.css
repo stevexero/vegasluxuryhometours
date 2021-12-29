@@ -101,8 +101,8 @@
   }
 
   .Footer-body {
-    width: 100%;
-    margin-left: 5rem;
+    width: 77%;
+    /* margin-left: 5rem; */
     flex-direction: column;
   }
 
