@@ -11,10 +11,16 @@ import './App.css';
 import { useState } from 'react';
 
 function App() {
+  const [isMenuOpen, setIsMenuOpen] = useState(false);
+
+  const handleMobileNavClick = (e) => {
+    setIsMenuOpen((isMenuOpen) => !isMenuOpen);
+  };
+
   return (
     <div className='App'>
-      <Navbar />
-      {/* {menuIsOpen && <MobileMenu />} */}
+      <Navbar handleMobileNavClick={handleMobileNavClick} />
+      {isMenuOpen && <MobileMenu />}
       <Switch>
         <Route exact path='/'>
           <Home />

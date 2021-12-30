@@ -8,12 +8,11 @@ import Logo from '../assets/vlht_logo.png';
 
 import './Navbar.css';
 
-const Navbar = () => {
+const Navbar = ({ handleMobileNavClick }) => {
   const isMobile = useMediaQuery({ query: '(max-width: 414px)' });
 
   const [logoVisibility, setLogoVisibility] = useState('hidden');
   const [navBackgroundColor, setNavBackgroundColor] = useState('transparent');
-  const [isMenuOpen, setIsMenuOpen] = useState(false);
 
   useEffect(() => {
     window.addEventListener('scroll', handleScroll);
@@ -37,16 +36,12 @@ const Navbar = () => {
     }
   };
 
-  const handleClick = (e) => {
-    setIsMenuOpen((isMenuOpen) => !isMenuOpen);
-  };
-
   return (
     <nav
       className='Navbar'
       style={{ background: navBackgroundColor, transition: '0.3s' }}>
       {isMobile ? (
-        <div onClick={handleClick}>
+        <div onClick={handleMobileNavClick}>
           <FontAwesomeIcon
             icon={faBars}
             size='2x'
