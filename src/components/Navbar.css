@@ -27,6 +27,10 @@
   color: var(--color-light-gold);
 }
 
+.Navbar-x {
+  color: var(--color-dark-silver);
+}
+
 @media screen and (max-width: 414px) {
   .Navbar {
     justify-content: flex-start;

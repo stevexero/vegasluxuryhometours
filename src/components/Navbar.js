@@ -2,7 +2,7 @@ import { useEffect, useState } from 'react';
 import { Link } from 'react-router-dom';
 import { useMediaQuery } from 'react-responsive';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faBars } from '@fortawesome/free-solid-svg-icons';
+import { faBars, faTimes } from '@fortawesome/free-solid-svg-icons';
 
 import Logo from '../assets/vlht_logo.png';
 
@@ -13,6 +13,7 @@ const Navbar = ({ handleMobileNavClick }) => {
 
   const [logoVisibility, setLogoVisibility] = useState('hidden');
   const [navBackgroundColor, setNavBackgroundColor] = useState('transparent');
+  const [isMenuOpen, setIsMenuOpen] = useState(false);
 
   useEffect(() => {
     window.addEventListener('scroll', handleScroll);
@@ -36,17 +37,26 @@ const Navbar = ({ handleMobileNavClick }) => {
     }
   };
 
+  const handleClick = (e) => {
+    handleMobileNavClick();
+    setIsMenuOpen((isMenuOpen) => !isMenuOpen);
+  };
+
   return (
     <nav
       className='Navbar'
       style={{ background: navBackgroundColor, transition: '0.3s' }}>
       {isMobile ? (
-        <div onClick={handleMobileNavClick}>
-          <FontAwesomeIcon
-            icon={faBars}
-            size='2x'
-            className='Navbar-hamburger'
-          />
+        <div onClick={handleClick}>
+          {isMenuOpen ? (
+            <FontAwesomeIcon icon={faTimes} size='2x' className='Navbar-x' />
+          ) : (
+            <FontAwesomeIcon
+              icon={faBars}
+              size='2x'
+              className='Navbar-hamburger'
+            />
+          )}
         </div>
       ) : (
         <div className='Navbar-container'>
