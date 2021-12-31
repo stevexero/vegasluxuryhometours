@@ -4,16 +4,20 @@ import { useMediaQuery } from 'react-responsive';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faBars, faTimes } from '@fortawesome/free-solid-svg-icons';
 
+import { useMobileMenu, useMobileMenuUpdate } from '../MobileMenuContext';
+
 import Logo from '../assets/vlht_logo.png';
 
 import './Navbar.css';
 
-const Navbar = ({ handleMobileNavClick }) => {
+const Navbar = () => {
   const isMobile = useMediaQuery({ query: '(max-width: 414px)' });
+
+  const menuOpen = useMobileMenu();
+  const toggleMenu = useMobileMenuUpdate();
 
   const [logoVisibility, setLogoVisibility] = useState('hidden');
   const [navBackgroundColor, setNavBackgroundColor] = useState('transparent');
-  const [isMenuOpen, setIsMenuOpen] = useState(false);
 
   useEffect(() => {
     window.addEventListener('scroll', handleScroll);
@@ -37,18 +41,13 @@ const Navbar = ({ handleMobileNavClick }) => {
     }
   };
 
-  const handleClick = (e) => {
-    handleMobileNavClick();
-    setIsMenuOpen((isMenuOpen) => !isMenuOpen);
-  };
-
   return (
     <nav
       className='Navbar'
       style={{ background: navBackgroundColor, transition: '0.3s' }}>
       {isMobile ? (
-        <div onClick={handleClick}>
-          {isMenuOpen ? (
+        <div onClick={toggleMenu}>
+          {menuOpen ? (
             <FontAwesomeIcon icon={faTimes} size='2x' className='Navbar-x' />
           ) : (
             <FontAwesomeIcon
