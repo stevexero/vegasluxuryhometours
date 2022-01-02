@@ -1,5 +1,4 @@
 import { Switch, Route } from 'react-router-dom';
-import { AnimatePresence } from 'framer-motion';
 
 import Navbar from './components/Navbar';
 import MobileMenu from './components/MobileMenu';
@@ -17,17 +16,15 @@ function App() {
     <MobileMenuProvider>
       <div className='App'>
         <Navbar />
-        <AnimatePresence exitBeforeEnter>
-          <MobileMenu />
-          <Switch>
-            <Route exact path='/'>
-              <Home />
-            </Route>
-            <Route exact path='/attributions'>
-              <Attributions />
-            </Route>
-          </Switch>
-        </AnimatePresence>
+        <MobileMenu />
+        <Switch>
+          <Route exact path='/'>
+            <Home />
+          </Route>
+          <Route exact path='/attributions'>
+            <Attributions />
+          </Route>
+        </Switch>
         <Footer />
       </div>
     </MobileMenuProvider>

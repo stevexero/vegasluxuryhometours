@@ -53,6 +53,13 @@ a {
   color: var(--color-dark-silver);
 }
 
+.rajdhani-bold-12 {
+  font-family: 'Rajdhani', sans-serif;
+  font-size: 12px;
+  line-height: 2.75rem;
+  letter-spacing: 1px;
+}
+
 .rajdhani-bold-18 {
   font-family: 'Rajdhani', sans-serif;
   font-size: 1.125rem;
@@ -66,9 +73,20 @@ a {
   letter-spacing: 2px;
 }
 
+.allura-regular-28 {
+  font-family: 'Allura', cursive;
+  font-size: 28px;
+}
+
 .allura-regular-36 {
   font-family: 'Allura', cursive;
   font-size: 2.25rem;
+}
+
+.alfa-slab-one-10 {
+  font-family: 'Alfa Slab One', cursive;
+  font-size: 10px;
+  letter-spacing: 3px;
 }
 
 .alfa-slab-one-18 {

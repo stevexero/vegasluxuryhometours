@@ -23,7 +23,7 @@ const Navbar = () => {
     window.addEventListener('scroll', handleScroll);
 
     return () => window.removeEventListener('scroll', handleScroll);
-  }, []);
+  }, []); // eslint-disable-line react-hooks/exhaustive-deps
 
   const handleScroll = (e) => {
     if (isMobile) {

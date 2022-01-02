@@ -10,19 +10,16 @@ import RightArrow from '../../assets/right_arrow.svg';
 import './Hero.css';
 
 const Hero = () => {
+  const isMobileSmall = useMediaQuery({ query: '(max-width: 320px)' });
   const isMobile = useMediaQuery({ query: '(max-width: 414px)' });
 
   const [logoWidth, setLogoWidth] = useState(isMobile ? 278 : 414);
   const [logoVisibility, setLogoVisibility] = useState('visible');
 
-  useEffect(() => {
-    window.addEventListener('scroll', handleScroll);
-
-    return () => window.removeEventListener('scroll', handleScroll);
-  }, []);
-
   const handleScroll = () => {
-    if (isMobile) {
+    if (isMobileSmall) {
+      setLogoWidth(200);
+    } else if (isMobile) {
       setLogoWidth(278);
     } else {
       let scrollTop = window.scrollY;
@@ -40,6 +37,11 @@ const Hero = () => {
       }
     }
   };
+
+  useEffect(() => {
+    window.addEventListener('scroll', handleScroll);
+    return () => window.removeEventListener('scroll', handleScroll);
+  }, []); // eslint-disable-line react-hooks/exhaustive-deps
 
   return (
     <header
@@ -59,26 +61,46 @@ const Hero = () => {
           />
         </div>
         <div className='Hero-text'>
-          <p className='rajdhani-bold-18 text-white'>
+          <p
+            className={`${
+              isMobileSmall ? 'rajdhani-bold-12 small' : 'rajdhani-bold-18'
+            } text-white`}>
             Venture outside of the {isMobile && <br />}
-            <span className='allura-regular-36 text-medium-gold'>
+            <span
+              className={`${
+                isMobileSmall ? 'allura-regular-28 small' : 'allura-regular-36'
+              } text-medium-gold`}>
               glittering lights{' '}
             </span>{' '}
             {isMobile && <br />}
             of the Vegas Strip and tour {isMobile && <br />}
-            <span className='rajdhani-bold-24 text-medium-gold'>
+            <span
+              className={`${
+                isMobileSmall ? 'rajdhani-bold-18 small' : 'rajdhani-bold-24'
+              } text-medium-gold`}>
               gorgeous homes
             </span>{' '}
             {isMobile && <br />}
             with scenic views along the way.
           </p>
           <br />
-          <p className='rajdhani-bold-18 text-white'>
+          <p
+            className={`${
+              isMobileSmall ? 'rajdhani-bold-12 small' : 'rajdhani-bold-18'
+            } text-white`}>
             You will love the{' '}
-            <span className='rajdhani-bold-24 text-medium-gold'>VIP</span>{' '}
+            <span
+              className={`${
+                isMobileSmall ? 'rajdhani-bold-18 small' : 'rajdhani-bold-24'
+              } text-medium-gold`}>
+              VIP
+            </span>{' '}
             treatment {isMobile && <br />} as you get a taste of the local Vegas{' '}
             {isMobile && <br />}
-            <span className='rajdhani-bold-24 text-medium-gold'>
+            <span
+              className={`${
+                isMobileSmall ? 'rajdhani-bold-18 small' : 'rajdhani-bold-24'
+              } text-medium-gold`}>
               luxury lifestyle!
             </span>
           </p>
@@ -91,7 +113,11 @@ const Hero = () => {
               },
             }}
             style={{ marginTop: '3rem' }}>
-            <Link to='/book' className='btn-hero alfa-slab-one-18'>
+            <Link
+              to='/book'
+              className={`btn-hero ${
+                isMobileSmall ? 'alfa-slab-one-10' : 'alfa-slab-one-18'
+              }`}>
               BOOK NOW
               <img src={RightArrow} alt='>' className='btn-arrow' />
             </Link>
