@@ -6,6 +6,8 @@ import Footer from './components/Footer';
 
 import Home from './pages/Home';
 import Attributions from './pages/Attributions';
+import About from './pages/About';
+import Book from './pages/Book';
 
 import { MobileMenuProvider } from './MobileMenuContext';
 
@@ -23,6 +25,12 @@ function App() {
           </Route>
           <Route exact path='/attributions'>
             <Attributions />
+          </Route>
+          <Route exact path='/about'>
+            <About />
+          </Route>
+          <Route exact path='/book'>
+            <Book />
           </Route>
         </Switch>
         <Footer />
