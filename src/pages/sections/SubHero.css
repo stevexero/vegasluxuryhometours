@@ -54,7 +54,7 @@
   justify-items: end;
 }
 
-@media screen and (max-width: 414px) {
+@media screen and (max-width: 768px) {
   .SubHero-left {
     width: 100%;
     align-items: center;

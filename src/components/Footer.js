@@ -7,7 +7,7 @@ import IgLogo from '../assets/ig.png';
 import './Footer.css';
 
 const Footer = () => {
-  const isMobile = useMediaQuery({ query: '(max-width: 414px)' });
+  const isMobile = useMediaQuery({ query: '(max-width: 768px)' });
 
   return (
     <footer className='Footer ptb-84'>

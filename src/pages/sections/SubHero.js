@@ -13,7 +13,7 @@ import './SubHero.css';
 
 const SubHero = () => {
   const isMobileSmall = useMediaQuery({ query: '(max-width: 320px)' });
-  const isMobile = useMediaQuery({ query: '(max-width: 414px)' });
+  const isMobile = useMediaQuery({ query: '(max-width: 768px)' });
 
   return (
     <div className='SubHero'>

@@ -11,7 +11,7 @@ import Logo from '../assets/vlht_logo.png';
 import './Navbar.css';
 
 const Navbar = () => {
-  const isMobile = useMediaQuery({ query: '(max-width: 414px)' });
+  const isMobile = useMediaQuery({ query: '(max-width: 768px)' });
 
   const menuOpen = useMobileMenu();
   const toggleMenu = useMobileMenuUpdate();

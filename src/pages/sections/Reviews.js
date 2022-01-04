@@ -9,9 +9,10 @@ import './Reviews.css';
 const Reviews = () => {
   const isMobileSmall = useMediaQuery({ query: '(max-width: 320px)' });
   const isMobile = useMediaQuery({ query: '(max-width: 414px)' });
+  const isTabletSmall = useMediaQuery({ query: '(max-width: 768px)' });
 
   const insideStyles = {
-    width: isMobile ? '300px' : '1100px',
+    width: isTabletSmall ? '700px' : isMobile ? '300px' : '1100px',
     position: 'absolute',
     top: '50%',
     left: '50%',
@@ -27,7 +28,7 @@ const Reviews = () => {
       <Parallax bgImage={ReviewsBackground} strength={500}>
         <div
           style={{
-            height: isMobile ? 800 : 600,
+            height: isTabletSmall ? 700 : isMobile ? 800 : 600,
             background: 'rgba(0,0,0,0.75)',
           }}
           className='Reviews-text-container'>
@@ -37,7 +38,7 @@ const Reviews = () => {
                 isMobile ? 'cinzel-regular-24' : 'cinzel-regular-56'
               } text-light-gold`}
               style={{
-                width: isMobile ? '300px' : '1000px',
+                width: isTabletSmall ? '700px' : isMobile ? '300px' : '1000px',
                 padding: isMobileSmall ? '1.2rem' : 0,
               }}>
               “Every member of our group greatly enjoyed this tour.”

@@ -68,7 +68,7 @@
   filter: drop-shadow(1px 1px 0 black);
 }
 
-@media screen and (min-width: 321px) and (max-width: 414px) {
+@media screen and (min-width: 321px) and (max-width: 768px) {
   .Hero-text {
     width: 100%;
   }

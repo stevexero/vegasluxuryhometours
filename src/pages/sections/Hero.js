@@ -11,7 +11,8 @@ import './Hero.css';
 
 const Hero = () => {
   const isMobileSmall = useMediaQuery({ query: '(max-width: 320px)' });
-  const isMobile = useMediaQuery({ query: '(max-width: 414px)' });
+  const isMobile = useMediaQuery({ query: '(max-width: 768px)' });
+  const isTabletSmall = useMediaQuery({ query: '(max-width: 768px)' });
 
   const [logoWidth, setLogoWidth] = useState(
     isMobileSmall ? 200 : isMobile ? 278 : 414
