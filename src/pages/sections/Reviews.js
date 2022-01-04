@@ -10,9 +10,16 @@ const Reviews = () => {
   const isMobileSmall = useMediaQuery({ query: '(max-width: 320px)' });
   const isMobile = useMediaQuery({ query: '(max-width: 414px)' });
   const isTabletSmall = useMediaQuery({ query: '(max-width: 768px)' });
+  const isTabletLarge = useMediaQuery({ query: '(max-width: 1100px)' });
 
   const insideStyles = {
-    width: isTabletSmall ? '700px' : isMobile ? '300px' : '1100px',
+    width: isTabletLarge
+      ? '900px'
+      : isTabletSmall
+      ? '700px'
+      : isMobile
+      ? '300px'
+      : '1100px',
     position: 'absolute',
     top: '50%',
     left: '50%',

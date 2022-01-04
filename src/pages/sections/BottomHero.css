@@ -24,3 +24,9 @@
     margin: 0 2.4rem;
   }
 }
+
+@media screen and (max-width: 1100px) {
+  .BottomHero {
+    padding: 4rem 1rem;
+  }
+}
