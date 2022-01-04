@@ -12,6 +12,7 @@ import img6 from '../../assets/subhero6.jpeg';
 import './SubHero.css';
 
 const SubHero = () => {
+  const isMobileSmall = useMediaQuery({ query: '(max-width: 320px)' });
   const isMobile = useMediaQuery({ query: '(max-width: 414px)' });
 
   return (
@@ -27,12 +28,20 @@ const SubHero = () => {
             )}
             <h1
               className={`SubHero-left-title ${
-                isMobile ? 'cinzel-regular-36' : 'cinzel-regular-56'
+                isMobileSmall
+                  ? 'cinzel-regular-30 small'
+                  : isMobile
+                  ? 'cinzel-regular-36'
+                  : 'cinzel-regular-56'
               } text-light-silver`}>
               A Taste of{' '}
               <span
                 className={`${
-                  isMobile ? 'cinzel-bold-36' : 'cinzel-bold-56'
+                  isMobileSmall
+                    ? 'cinzel-regular-30 small'
+                    : isMobile
+                    ? 'cinzel-bold-36'
+                    : 'cinzel-bold-56'
                 } text-dark-gold`}>
                 VIP
               </span>

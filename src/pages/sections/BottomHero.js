@@ -4,6 +4,7 @@ import { useMediaQuery } from 'react-responsive';
 import './BottomHero.css';
 
 const BottomHero = () => {
+  const isMobileSmall = useMediaQuery({ query: '(max-width: 320px)' });
   const isMobile = useMediaQuery({ query: '(max-width: 414px)' });
 
   return (
@@ -11,7 +12,11 @@ const BottomHero = () => {
       <div className='BottomHero-container container-1100'>
         <p
           className={`${
-            isMobile ? 'cinzel-regular-36' : 'cinzel-regular-56'
+            isMobileSmall
+              ? 'cinzel-regular-30'
+              : isMobile
+              ? 'cinzel-regular-36'
+              : 'cinzel-regular-56'
           } text-light-silver`}>
           Let us do the research and create a tour of the Las Vegas luxury
           lifestyle tailored just for you.

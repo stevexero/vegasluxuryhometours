@@ -13,7 +13,9 @@ const Hero = () => {
   const isMobileSmall = useMediaQuery({ query: '(max-width: 320px)' });
   const isMobile = useMediaQuery({ query: '(max-width: 414px)' });
 
-  const [logoWidth, setLogoWidth] = useState(isMobile ? 278 : 414);
+  const [logoWidth, setLogoWidth] = useState(
+    isMobileSmall ? 200 : isMobile ? 278 : 414
+  );
   const [logoVisibility, setLogoVisibility] = useState('visible');
 
   const handleScroll = () => {
@@ -68,7 +70,9 @@ const Hero = () => {
             Venture outside of the {isMobile && <br />}
             <span
               className={`${
-                isMobileSmall ? 'allura-regular-28 small' : 'allura-regular-36'
+                isMobileSmall
+                  ? 'allura-regular-28 small cursive-text'
+                  : 'allura-regular-36'
               } text-medium-gold`}>
               glittering lights{' '}
             </span>{' '}

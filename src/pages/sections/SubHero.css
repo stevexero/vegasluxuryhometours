@@ -66,3 +66,9 @@
     margin-right: 0;
   }
 }
+
+@media screen and (max-width: 320px) {
+  .SubHero-left-header .small {
+    margin-bottom: 2rem;
+  }
+}

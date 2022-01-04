@@ -7,6 +7,7 @@ import Aaron from '../../assets/aaron.jpeg';
 import './Reviews.css';
 
 const Reviews = () => {
+  const isMobileSmall = useMediaQuery({ query: '(max-width: 320px)' });
   const isMobile = useMediaQuery({ query: '(max-width: 414px)' });
 
   const insideStyles = {
@@ -35,7 +36,10 @@ const Reviews = () => {
               className={`${
                 isMobile ? 'cinzel-regular-24' : 'cinzel-regular-56'
               } text-light-gold`}
-              style={{ width: isMobile ? '300px' : '1000px' }}>
+              style={{
+                width: isMobile ? '300px' : '1000px',
+                padding: isMobileSmall ? '1.2rem' : 0,
+              }}>
               “Every member of our group greatly enjoyed this tour.”
             </h1>
             <p className='montserrat-light-14 text-white mt-32'>

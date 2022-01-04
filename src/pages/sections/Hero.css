@@ -81,6 +81,11 @@
 @media screen and (max-width: 320px) {
   .Hero-text {
     width: 100%;
+    margin-top: 1rem;
+  }
+
+  .cursive-text {
+    line-height: 3rem !important;
   }
 
   .Hero-logo-container {
@@ -95,6 +100,5 @@
 
   .small {
     line-height: 1.25rem;
-    margin-top: 1.25rem;
   }
 }
