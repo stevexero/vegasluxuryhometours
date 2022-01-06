@@ -8,5 +8,25 @@
 }
 
 .Book-container {
-  width: 100%;
+  width: 905px;
+}
+
+@media screen and (max-width: 768px) {
+  .Book {
+    background: white;
+  }
+
+  .Book-container {
+    width: 50%;
+  }
+}
+
+@media screen and (max-width: 375px) {
+  .Book {
+    background: white;
+  }
+
+  .Book-container {
+    width: 100%;
+  }
 }
