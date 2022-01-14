@@ -1,0 +1,23 @@
+.About {
+  width: 100vw;
+  height: 100vh;
+  background: var(--color-light-gold);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.About-container {
+  width: 900px;
+  background: white;
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.25);
+  display: flex;
+}
+
+.About-container p {
+  padding: 4rem;
+}
+
+.About-photo {
+  width: 400px;
+}
