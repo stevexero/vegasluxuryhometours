@@ -47,7 +47,12 @@ const Navbar = () => {
     <nav
       className='Navbar'
       style={{
-        background: location.pathname === '/' ? navBackgroundColor : 'black',
+        background:
+          location.pathname === '/'
+            ? navBackgroundColor
+            : isMobile
+            ? 'transparent'
+            : 'black',
         transition: '0.3s',
       }}>
       {isMobile ? (
@@ -78,7 +83,8 @@ const Navbar = () => {
             alt='logo'
             style={{
               width: '130px',
-              visibility: logoVisibility,
+              visibility:
+                location.pathname === '/' ? logoVisibility : 'visible',
               transition: logoVisibility === 'hidden' ? '0.01s' : '0s',
             }}
           />
