@@ -21,3 +21,81 @@
 .About-photo {
   width: 400px;
 }
+
+@media screen and (min-width: 414px) and (max-width: 768px) {
+  .About {
+    height: 120vh;
+    background: white;
+    align-items: flex-end;
+  }
+
+  .About-container {
+    width: 100%;
+    background: white;
+    padding: 1rem;
+    box-shadow: none;
+    flex-direction: column;
+  }
+
+  .About-container p {
+    padding: 0;
+    margin-bottom: 2rem;
+    text-align: justify;
+  }
+
+  .About-photo {
+    width: 100%;
+  }
+}
+
+@media screen and (min-width: 321px) and (max-width: 414px) {
+  .About {
+    height: 840px;
+    background: white;
+    align-items: flex-end;
+  }
+
+  .About-container {
+    width: 100%;
+    background: white;
+    padding: 1rem;
+    box-shadow: none;
+    flex-direction: column;
+  }
+
+  .About-container p {
+    padding: 0;
+    margin-bottom: 2rem;
+    text-align: justify;
+  }
+
+  .About-photo {
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 320px) {
+  .About {
+    height: 800px;
+    background: white;
+    align-items: flex-end;
+  }
+
+  .About-container {
+    width: 100%;
+    background: white;
+    padding: 1rem;
+    box-shadow: none;
+    flex-direction: column;
+  }
+
+  .About-container p {
+    padding: 0;
+    margin-bottom: 2rem;
+    text-align: justify;
+  }
+
+  .About-photo {
+    width: 100%;
+  }
+}

@@ -54,6 +54,12 @@
   justify-items: end;
 }
 
+@media screen and (max-width: 1100px) {
+  .SubHero {
+    padding: 0 1rem;
+  }
+}
+
 @media screen and (max-width: 768px) {
   .SubHero-left {
     width: 100%;
@@ -70,11 +76,5 @@
 @media screen and (max-width: 320px) {
   .SubHero-left-header .small {
     margin-bottom: 2rem;
-  }
-}
-
-@media screen and (max-width: 1100px) {
-  .SubHero {
-    padding: 0 1rem;
   }
 }

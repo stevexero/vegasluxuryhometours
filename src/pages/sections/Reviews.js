@@ -8,9 +8,15 @@ import './Reviews.css';
 
 const Reviews = () => {
   const isMobileSmall = useMediaQuery({ query: '(max-width: 320px)' });
-  const isMobile = useMediaQuery({ query: '(max-width: 414px)' });
-  const isTabletSmall = useMediaQuery({ query: '(max-width: 768px)' });
-  const isTabletLarge = useMediaQuery({ query: '(max-width: 1100px)' });
+  const isMobile = useMediaQuery({
+    query: '(max-width: 414px)',
+  });
+  const isTabletSmall = useMediaQuery({
+    query: '(min-width: 415px) and (max-width: 768px)',
+  });
+  const isTabletLarge = useMediaQuery({
+    query: '(min-width: 769px) and (max-width: 1100px)',
+  });
 
   const insideStyles = {
     width: isTabletLarge
