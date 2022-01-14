@@ -1,5 +1,5 @@
 import { useEffect, useState } from 'react';
-import { Link } from 'react-router-dom';
+import { Link, useLocation } from 'react-router-dom';
 import { useMediaQuery } from 'react-responsive';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faBars, faTimes } from '@fortawesome/free-solid-svg-icons';
@@ -11,6 +11,8 @@ import Logo from '../assets/vlht_logo.png';
 import './Navbar.css';
 
 const Navbar = () => {
+  const location = useLocation();
+
   const isMobile = useMediaQuery({ query: '(max-width: 768px)' });
 
   const menuOpen = useMobileMenu();
@@ -44,7 +46,10 @@ const Navbar = () => {
   return (
     <nav
       className='Navbar'
-      style={{ background: navBackgroundColor, transition: '0.3s' }}>
+      style={{
+        background: location.pathname === '/' ? navBackgroundColor : 'black',
+        transition: '0.3s',
+      }}>
       {isMobile ? (
         <div onClick={toggleMenu}>
           {menuOpen ? (
