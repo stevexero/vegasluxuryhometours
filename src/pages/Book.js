@@ -1,5 +1,6 @@
 import { useEffect } from 'react';
 import { useMediaQuery } from 'react-responsive';
+import { motion } from 'framer-motion';
 
 import './Book.css';
 
@@ -18,7 +19,15 @@ const Book = () => {
   }, []);
 
   return (
-    <div className='Book'>
+    <motion.div
+      className='Book'
+      initial={{ opacity: 0 }}
+      animate={{ opacity: 1 }}
+      transition={{ duration: 0.5 }}
+      exit={{
+        opacity: 0,
+        transition: { duration: 0.5 },
+      }}>
       <div className='Book-container'>
         {isTabletSmall ? (
           <div
@@ -55,7 +64,7 @@ const Book = () => {
           </div>
         )}
       </div>
-    </div>
+    </motion.div>
   );
 };
 

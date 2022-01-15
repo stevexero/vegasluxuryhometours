@@ -1,3 +1,5 @@
+import { motion } from 'framer-motion';
+
 import Arrow from '../assets/right_arrow.svg';
 import Champagne from '../assets/champagne.svg';
 
@@ -5,7 +7,15 @@ import './Attributions.css';
 
 const Attributions = () => {
   return (
-    <div className='Attributions'>
+    <motion.div
+      className='Attributions'
+      initial={{ opacity: 0 }}
+      animate={{ opacity: 1 }}
+      transition={{ duration: 0.5 }}
+      exit={{
+        opacity: 0,
+        transition: { duration: 0.5 },
+      }}>
       <div className='Attributions-container'>
         <h1>Attributions</h1>
         <img src={Arrow} alt='arrow' />
@@ -23,7 +33,7 @@ const Attributions = () => {
           Champagne by Made x Made - The Noun Project
         </a>
       </div>
-    </div>
+    </motion.div>
   );
 };
 

@@ -1,10 +1,20 @@
+import { motion } from 'framer-motion';
+
 import AboutPhoto from '../assets/erica_1.jpeg';
 
 import './About.css';
 
 const About = () => {
   return (
-    <div className='About'>
+    <motion.div
+      className='About'
+      initial={{ opacity: 0 }}
+      animate={{ opacity: 1 }}
+      transition={{ duration: 0.5 }}
+      exit={{
+        opacity: 0,
+        transition: { duration: 0.5 },
+      }}>
       <div className='About-container'>
         <p className='montserrat-regular-14 text-dark-silver'>
           <span className='allura-regular-36'>Erica </span> is a licensed home
@@ -14,13 +24,9 @@ const About = () => {
           enthusiasm and appreciation for the beautiful and unique homes that
           stud the valley outside the crowded tourist spots of Las Vegas.
         </p>
-        <img
-          src={AboutPhoto}
-          alt='Erica Profile Photo'
-          className='About-photo'
-        />
+        <img src={AboutPhoto} alt='Erica Profile' className='About-photo' />
       </div>
-    </div>
+    </motion.div>
   );
 };
 
