@@ -1,5 +1,5 @@
 .Attributions {
-  background: red;
+  background: var(--color-light-gold);
   width: 100vw;
   height: 100vh;
   display: flex;
