@@ -1,6 +1,7 @@
 .StoryCard {
   width: 50%;
-  background: var(--color-light-gold);
+  /* background: var(--color-light-gold); */
+  background: white;
   display: flex;
   align-items: center;
   justify-content: center;
