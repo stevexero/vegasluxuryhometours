@@ -1,6 +1,6 @@
 import { motion } from 'framer-motion';
 
-import AboutPhoto from '../assets/erica_1.jpeg';
+import AboutPhoto from '../assets/erica_1.png';
 
 import './About.css';
 
