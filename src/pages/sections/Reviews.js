@@ -44,7 +44,8 @@ const Reviews = () => {
             height: isTabletSmall ? 700 : isMobile ? 800 : 600,
             background: 'rgba(0,0,0,0.75)',
           }}
-          className='Reviews-text-container'>
+          className='Reviews-text-container'
+        >
           <div style={insideStyles} className='Reviews-text-session'>
             <h1
               className={`${
@@ -53,7 +54,8 @@ const Reviews = () => {
               style={{
                 width: isTabletSmall ? '700px' : isMobile ? '300px' : '1000px',
                 padding: isMobileSmall ? '1.2rem' : 0,
-              }}>
+              }}
+            >
               “Every member of our group greatly enjoyed this tour.”
             </h1>
             <p className='montserrat-light-14 text-white mt-32'>
@@ -71,14 +73,16 @@ const Reviews = () => {
             />
             <p
               className='montserrat-light-14 text-white'
-              style={{ marginTop: '0.5rem' }}>
+              style={{ marginTop: '0.5rem' }}
+            >
               AARON
             </p>
             <a
-              href='https://dummylink.com'
+              href='https://www.airbnb.com/experiences/2649345?source=booking_widget&modal=REVIEWS'
               className='page-link cinzel-decorative-bold-18 text-light-gold mt-32'
               target='_blank'
-              rel='noreferrer'>
+              rel='noreferrer'
+            >
               SEE MORE REVIEWS
             </a>
           </div>
