@@ -12,7 +12,8 @@ const Book = () => {
   useEffect(() => {
     const script = document.createElement('script');
 
-    script.src = 'https://www.airbnb.com/embeddable/airbnb_jssdk';
+    // script.src = 'https://www.airbnb.com/embeddable/airbnb_jssdk';
+    script.src = 'https://assets.calendly.com/assets/external/widget.js';
     script.async = true;
 
     document.body.appendChild(script);
@@ -27,9 +28,10 @@ const Book = () => {
       exit={{
         opacity: 0,
         transition: { duration: 0.5 },
-      }}>
+      }}
+    >
       <div className='Book-container'>
-        {isTabletSmall ? (
+        {/* {isTabletSmall ? (
           <div
             className='airbnb-embed-frame'
             data-id='2649345'
@@ -62,7 +64,12 @@ const Book = () => {
               {''}
             </a>
           </div>
-        )}
+        )} */}
+        <div
+          className='calendly-inline-widget'
+          data-url='https://calendly.com/redrunedigital?background_color=ffffff&text_color=606167&primary_color=0000ff'
+          style={{ minWidth: '320px', height: '1130px' }}
+        ></div>
       </div>
     </motion.div>
   );
