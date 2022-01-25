@@ -1,8 +1,30 @@
 import { motion } from 'framer-motion';
+import emailjs from '@emailjs/browser';
 
 import './Contact.css';
 
 const Contact = () => {
+  const sendEmail = (e) => {
+    e.preventDefault();
+
+    emailjs
+      .sendForm(
+        'service_0koyfdt',
+        'template_59a48wq',
+        e.target,
+        'user_67oyDEuLNPieupKQUpBr7'
+      )
+      .then(
+        (result) => {
+          console.log(result.text);
+        },
+        (error) => {
+          console.log(error.text);
+        }
+      );
+    e.target.reset();
+  };
+
   return (
     <motion.div
       initial={{ opacity: 0 }}
@@ -12,11 +34,10 @@ const Contact = () => {
         opacity: 0,
         transition: { duration: 0.5 },
       }}
-      className='Contact'
-    >
+      className='Contact'>
       <div className='Contact-container'>
         <h1 className='cinzel-regular-56 text-dark-silver'>Contact Us</h1>
-        <form>
+        <form onSubmit={sendEmail}>
           <input type='text' name='name' required placeholder='Name' />
           <input type='email' name='email' required placeholder='Email' />
           <input type='text' name='subject' placeholder='Subject' />
