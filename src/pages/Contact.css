@@ -13,32 +13,52 @@
   align-items: center;
 }
 
-.Contact-container form {
+.Contact-top {
+  width: 100%;
+  text-align: center;
+}
+
+.Contact-bottom {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.Contact-left {
+  width: 50%;
+}
+
+.Contact-right {
+  width: 50%;
+}
+
+.Contact-left form {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
 }
 
-.Contact-container form input,
-.Contact-container form textarea,
-.Contact-container form button {
-  width: 900px;
+.Contact-left form input,
+.Contact-left form textarea,
+.Contact-left form button {
+  width: 60%;
   margin-top: 2rem;
 }
 
-.Contact-container form textarea {
+.Contact-left form textarea {
   resize: none;
   font-family: 'Montserrat', sans-serif;
   font-weight: 400;
 }
 
-.Contact-container form input:focus,
-.Contact-container form textarea:focus {
+.Contact-left form input:focus,
+.Contact-left form textarea:focus {
   outline: none;
 }
 
-.Contact-container form input {
+.Contact-left form input {
   height: 4.1rem;
   padding-left: 2rem;
   border-radius: 50px;
@@ -51,7 +71,7 @@
   font-weight: 400;
 }
 
-.Contact-container form textarea {
+.Contact-left form textarea {
   height: 14.1rem;
   padding: 2rem;
   border-radius: 50px;
@@ -62,7 +82,7 @@
   color: var(--color-dark-silver);
 }
 
-.Contact-container form button {
+.Contact-left form button {
   padding: 1rem;
   background: linear-gradient(
     105deg,
@@ -79,6 +99,6 @@
   box-shadow: 0 4px 0 black;
 }
 
-.Contact-container form button:hover {
+.Contact-left form button:hover {
   cursor: pointer;
 }

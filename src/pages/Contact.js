@@ -36,14 +36,24 @@ const Contact = () => {
       }}
       className='Contact'>
       <div className='Contact-container'>
-        <h1 className='cinzel-regular-56 text-dark-silver'>Contact Us</h1>
-        <form onSubmit={sendEmail}>
-          <input type='text' name='name' required placeholder='Name' />
-          <input type='email' name='email' required placeholder='Email' />
-          <input type='text' name='subject' placeholder='Subject' />
-          <textarea name='message' required placeholder='Message'></textarea>
-          <button className='alfa-slab-one-18'>SEND</button>
-        </form>
+        <div className='Contact-top'>
+          <h1 className='cinzel-regular-56 text-dark-silver'>Contact Us</h1>
+        </div>
+        <div className='Contact-bottom'>
+          <div className='Contact-left'>
+            <form onSubmit={sendEmail}>
+              <input type='text' name='name' required placeholder='Name' />
+              <input type='email' name='email' required placeholder='Email' />
+              <input type='text' name='subject' placeholder='Subject' />
+              <textarea
+                name='message'
+                required
+                placeholder='Message'></textarea>
+              <button className='alfa-slab-one-18'>SEND</button>
+            </form>
+          </div>
+          <div className='Contact-right'>Phone number, email</div>
+        </div>
       </div>
     </motion.div>
   );
