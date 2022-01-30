@@ -31,6 +31,12 @@
 
 .Contact-right {
   width: 50%;
+  height: 100%;
+  margin-left: 4rem;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: space-evenly;
 }
 
 .Contact-left form {
@@ -43,7 +49,7 @@
 .Contact-left form input,
 .Contact-left form textarea,
 .Contact-left form button {
-  width: 60%;
+  width: 80%;
   margin-top: 2rem;
 }
 
@@ -93,7 +99,7 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  border: 2px solid var(--color-light-gold);
+  border: 2px solid var(--color-dark-gold);
   border-radius: 50px;
   text-shadow: 1px 1px 0 black;
   box-shadow: 0 4px 0 black;
@@ -101,4 +107,9 @@
 
 .Contact-left form button:hover {
   cursor: pointer;
+}
+
+.Contact-right-top h3,
+.Contact-right-bottom h3 {
+  margin-bottom: 2rem;
 }
