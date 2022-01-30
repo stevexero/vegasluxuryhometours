@@ -10,6 +10,7 @@ import Attributions from './pages/Attributions';
 import About from './pages/About';
 import Book from './pages/Book';
 import Contact from './pages/Contact';
+import Payment from './pages/Payment';
 
 import { MobileMenuProvider } from './MobileMenuContext';
 
@@ -39,6 +40,9 @@ function App() {
             </Route>
             <Route exact path='/contact'>
               <Contact />
+            </Route>
+            <Route exact path='/payment'>
+              <Payment />
             </Route>
           </Switch>
           <Footer />
