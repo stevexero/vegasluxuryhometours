@@ -12,6 +12,8 @@ import Book from './pages/Book';
 import Contact from './pages/Contact';
 import Payment from './pages/Payment';
 import Blog from './pages/Blog';
+import SinglePost from './pages/SinglePost';
+import Post from './pages/Post';
 
 import { MobileMenuProvider } from './MobileMenuContext';
 
@@ -47,6 +49,12 @@ function App() {
             </Route>
             <Route exact path='/blog'>
               <Blog />
+            </Route>
+            <Route exact path='/blog/:slug'>
+              <SinglePost />
+            </Route>
+            <Route exact path='/post'>
+              <Post />
             </Route>
           </Switch>
           <Footer />
