@@ -1,7 +1,36 @@
 .Blog {
   width: 100vw;
-  height: 100vh;
+  min-height: 100vh;
+  background: var(--color-light-silver);
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
+}
+
+.Blog-container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 4rem;
+}
+
+.Blog-card {
+  width: 400px;
+  height: 400px;
+  background: white;
+  box-shadow: 0 10px 10px rgba(0, 0, 0, 0.25);
+}
+
+.Blog-image {
+  position: relative;
+}
+
+.Blog-image:after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  box-shadow: inset 0px 0px 150px black;
 }
