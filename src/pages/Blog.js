@@ -31,16 +31,20 @@ const Blog = () => {
     <div className='Blog'>
       <h1>Blog</h1>
       <h2>Welcome to the Vegas Luxury Home Tours Blog</h2>
-      <div>
+      <div className='Blog-container'>
         {postData &&
           postData.map((post, index) => (
-            <article key={index}>
+            <article key={index} className='Blog-card'>
               <Link to={'/blog/' + post.slug.current} key={post.slug.current}>
                 <span key={index}>
-                  <img
-                    src={post.mainImage.asset.url}
-                    alt={post.mainImage.alt}
-                  />
+                  <div
+                    className='Blog-image'
+                    style={{
+                      background: `url(${post.mainImage.asset.url}) no-repeat center center/cover`,
+                      width: '100%',
+                      height: '200px',
+                    }}
+                  ></div>
                   <span>
                     <h3>{post.title}</h3>
                   </span>
