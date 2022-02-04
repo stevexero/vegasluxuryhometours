@@ -54,7 +54,8 @@ const Navbar = () => {
             ? 'transparent'
             : 'black',
         transition: '0.3s',
-      }}>
+      }}
+    >
       {isMobile ? (
         <div onClick={toggleMenu}>
           {menuOpen ? (
@@ -70,24 +71,26 @@ const Navbar = () => {
       ) : (
         <div className='Navbar-container'>
           <div className='Navbar-left'>
-            <Link className='rajdhani-bold-24 nav-link' to='/'>
-              Home
+            <Link className='rajdhani-bold-24 nav-link' to='/blog'>
+              Blog
             </Link>
             <Link className='rajdhani-bold-24 nav-link' to='/about'>
               About
             </Link>
           </div>
-          <img
-            className='Hero-logo'
-            src={Logo}
-            alt='logo'
-            style={{
-              width: '130px',
-              visibility:
-                location.pathname === '/' ? logoVisibility : 'visible',
-              transition: logoVisibility === 'hidden' ? '0.01s' : '0s',
-            }}
-          />
+          <Link to='/'>
+            <img
+              className='Hero-logo'
+              src={Logo}
+              alt='logo'
+              style={{
+                width: '130px',
+                visibility:
+                  location.pathname === '/' ? logoVisibility : 'visible',
+                transition: logoVisibility === 'hidden' ? '0.01s' : '0s',
+              }}
+            />
+          </Link>
           <div className='Navbar-right'>
             <Link className='rajdhani-bold-24 nav-link' to='/contact'>
               Contact

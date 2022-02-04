@@ -48,7 +48,8 @@ const Hero = () => {
   return (
     <header
       className='Hero'
-      style={{ background: `url(${HeroImg}) no-repeat center center/cover` }}>
+      style={{ background: `url(${HeroImg}) no-repeat center center/cover` }}
+    >
       <div className='overlay'>
         <div className='Hero-logo-container'>
           <img
@@ -66,14 +67,16 @@ const Hero = () => {
           <p
             className={`${
               isMobileSmall ? 'rajdhani-bold-12 small' : 'rajdhani-bold-18'
-            } text-white`}>
+            } text-white`}
+          >
             Venture outside of the {isMobile && <br />}
             <span
               className={`${
                 isMobileSmall
                   ? 'allura-regular-28 small cursive-text'
                   : 'allura-regular-36'
-              } text-medium-gold`}>
+              } text-medium-gold`}
+            >
               glittering lights{' '}
             </span>{' '}
             {isMobile && <br />}
@@ -81,7 +84,8 @@ const Hero = () => {
             <span
               className={`${
                 isMobileSmall ? 'rajdhani-bold-18 small' : 'rajdhani-bold-24'
-              } text-medium-gold`}>
+              } text-medium-gold`}
+            >
               gorgeous homes
             </span>{' '}
             {isMobile && <br />}
@@ -91,12 +95,14 @@ const Hero = () => {
           <p
             className={`${
               isMobileSmall ? 'rajdhani-bold-12 small' : 'rajdhani-bold-18'
-            } text-white`}>
+            } text-white`}
+          >
             You will love the{' '}
             <span
               className={`${
                 isMobileSmall ? 'rajdhani-bold-18 small' : 'rajdhani-bold-24'
-              } text-medium-gold`}>
+              } text-medium-gold`}
+            >
               VIP
             </span>{' '}
             treatment {isMobile && <br />} as you get a taste of the local Vegas{' '}
@@ -104,7 +110,8 @@ const Hero = () => {
             <span
               className={`${
                 isMobileSmall ? 'rajdhani-bold-18 small' : 'rajdhani-bold-24'
-              } text-medium-gold`}>
+              } text-medium-gold`}
+            >
               luxury lifestyle!
             </span>
           </p>
@@ -116,12 +123,14 @@ const Hero = () => {
                 type: 'spring',
               },
             }}
-            style={{ marginTop: '3rem' }}>
+            style={{ marginTop: '3rem' }}
+          >
             <Link
               to='/book'
               className={`btn-hero ${
                 isMobileSmall ? 'alfa-slab-one-10' : 'alfa-slab-one-18'
-              }`}>
+              }`}
+            >
               BOOK NOW
               <img src={RightArrow} alt='>' className='btn-arrow' />
             </Link>
