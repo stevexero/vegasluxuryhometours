@@ -14,6 +14,7 @@ const Blog = () => {
         `*[_type == "post"]{
             title,
             slug,
+            body,
             mainImage{
                 asset->{
                     _id,
@@ -24,6 +25,7 @@ const Blog = () => {
         }`
       )
       .then((data) => setPostData(data))
+      //   .then((data) => console.log(data))
       .catch(console.error);
   }, []);
 
