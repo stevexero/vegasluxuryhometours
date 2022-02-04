@@ -12,6 +12,16 @@
   margin-top: 160px;
 }
 
+.Blog-body {
+  width: 100%;
+  height: 100%;
+  margin-top: 60px;
+  margin-bottom: 60px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
 .Blog-container {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
@@ -44,4 +54,16 @@
   -webkit-box-orient: vertical;
   -webkit-line-clamp: 3;
   overflow: hidden;
+}
+
+.Blog-card-container span h3 {
+  margin: 2rem;
+  color: black;
+  text-align: center;
+}
+
+.Blog-content div {
+  margin: 2rem;
+  margin-top: 0;
+  color: var(--color-dark-silver);
 }

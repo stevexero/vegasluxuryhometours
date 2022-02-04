@@ -32,7 +32,9 @@ const Blog = () => {
   return (
     <div className='Blog'>
       <div className='Blog-header'>
-        <h1>Welcome to the Vegas Luxury Home Tours Blog</h1>
+        <h1 className='cinzel-bold-56 text-dark-silver'>
+          Welcome to the Vegas Luxury Home Tours Blog
+        </h1>
       </div>
       <div className='Blog-body'>
         <div className='Blog-container'>
@@ -49,16 +51,18 @@ const Blog = () => {
                         height: '200px',
                       }}
                     ></div>
-                    <span>
-                      <h3>{post.title}</h3>
-                    </span>
-                    <span className='Blog-content'>
-                      <BlockContent
-                        blocks={post.body}
-                        projectId='8rk8cdbm'
-                        dataset='production'
-                      />
-                    </span>
+                    <div className='Blog-card-container'>
+                      <span>
+                        <h3>{post.title}</h3>
+                      </span>
+                      <span className='Blog-content'>
+                        <BlockContent
+                          blocks={post.body}
+                          projectId='8rk8cdbm'
+                          dataset='production'
+                        />
+                      </span>
+                    </div>
                   </span>
                 </Link>
               </article>
