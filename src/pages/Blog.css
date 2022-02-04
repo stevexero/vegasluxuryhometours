@@ -4,8 +4,12 @@
   background: var(--color-light-silver);
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  justify-content: flex-start;
   align-items: center;
+}
+
+.Blog-header {
+  margin-top: 160px;
 }
 
 .Blog-container {
@@ -33,4 +37,11 @@
   bottom: 0;
   right: 0;
   box-shadow: inset 0px 0px 150px black;
+}
+
+.Blog-content div:first-child {
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 3;
+  overflow: hidden;
 }
