@@ -30,13 +30,15 @@
 
 .Blog-card {
   width: 400px;
-  height: 400px;
+  height: 432px;
   background: white;
   box-shadow: 0 10px 10px rgba(0, 0, 0, 0.25);
+  border-radius: 15px;
 }
 
 .Blog-image {
   position: relative;
+  border-radius: 15px 15px 0 0;
 }
 
 .Blog-image:after {
@@ -46,8 +48,20 @@
   left: 0;
   bottom: 0;
   right: 0;
-  box-shadow: inset 0px 0px 150px black;
+  border-top: 8px solid var(--color-dark-gold);
+  border-radius: 15px 15px 0 0;
 }
+
+/* .Blog-image:after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  box-shadow: inset 0px 0px 150px black;
+  border-radius: 15px 15px 0 0;
+} */
 
 .Blog-content div:first-child {
   display: -webkit-box;
@@ -66,4 +80,12 @@
   margin: 2rem;
   margin-top: 0;
   color: var(--color-dark-silver);
+}
+
+.Blog-link {
+  margin-right: 3rem;
+  text-align: right;
+  color: blue;
+  text-decoration: underline;
+  font-size: 0.75rem;
 }
