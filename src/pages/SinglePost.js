@@ -1,5 +1,5 @@
 import { useState, useEffect } from 'react';
-import { useParams } from 'react-router-dom';
+import { Link, useParams } from 'react-router-dom';
 import sanityClient from '../client';
 import imageUrlBuilder from '@sanity/image-url';
 import BlockContent from '@sanity/block-content-to-react';
@@ -23,6 +23,7 @@ const SinglePost = () => {
         title,
         _id,
         slug,
+        publishedAt,
         mainImage{
             asset->{
                 _id,
@@ -30,7 +31,7 @@ const SinglePost = () => {
             }
         },
         body,
-        "name": auther->name,
+        "name": author->name,
         "authorImage": author->image 
     }`
       )
@@ -44,31 +45,38 @@ const SinglePost = () => {
 
   return (
     <main className='SinglePost'>
-      <article>
-        <header>
-          <div>
-            <div>
-              <h1>{singlePost.title}</h1>
-              <div>
-                <img
-                  src={urlFor(singlePost.authorImage).width(100).url()}
-                  alt={singlePost.name}
-                  className='SinglePost-author-image'
-                />
-                <p>{singlePost.name}</p>
-              </div>
-            </div>
+      <div className='SinglePost-header'>
+        <h1 className='cinzel-bold-56 text-dark-silver text-center'>
+          {singlePost.title.toUpperCase()}
+        </h1>
+        <Link to='/about' className='SinglePost-author'>
+          <div className='SinglePost-author-left'>
+            <img
+              src={urlFor(singlePost.authorImage).width(50).url()}
+              alt={singlePost.name}
+              className='SinglePost-author-image'
+            />
+            <p>{singlePost.name}</p>
           </div>
-          <img src={singlePost.mainImage.asset.url} alt={singlePost.title} />
-        </header>
-        <div>
-          <BlockContent
-            blocks={singlePost.body}
-            projectId='8rk8cdbm'
-            dataset='production'
-          />
-        </div>
-      </article>
+          <div className='SinglePost-author-right'>
+            <p>{new Date(singlePost.publishedAt).toDateString()}</p>
+          </div>
+        </Link>
+        <div
+          className='SinglePost-image mt-64'
+          style={{
+            background: `url(${singlePost.mainImage.asset.url})`,
+          }}
+        ></div>
+      </div>
+
+      <div className='SinglePost-body'>
+        <BlockContent
+          blocks={singlePost.body}
+          projectId='8rk8cdbm'
+          dataset='production'
+        />
+      </div>
     </main>
   );
 };

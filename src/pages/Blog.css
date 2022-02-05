@@ -52,17 +52,6 @@
   border-radius: 15px 15px 0 0;
 }
 
-/* .Blog-image:after {
-  content: '';
-  position: absolute;
-  top: 0;
-  left: 0;
-  bottom: 0;
-  right: 0;
-  box-shadow: inset 0px 0px 150px black;
-  border-radius: 15px 15px 0 0;
-} */
-
 .Blog-content div:first-child {
   display: -webkit-box;
   -webkit-box-orient: vertical;

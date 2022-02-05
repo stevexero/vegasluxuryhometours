@@ -1,8 +1,32 @@
 .SinglePost {
   width: 100vw;
-  height: 100vh;
+  min-height: 100vh;
   display: flex;
-  justify-content: center;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.SinglePost-header {
+  margin-top: 200px;
+}
+
+.SinglePost-image {
+  width: 50vw;
+  height: 600px;
+  background-position: center !important;
+  background-repeat: no-repeat !important;
+  background-size: cover !important;
+}
+
+.SinglePost-author {
+  width: 400px;
+  display: flex;
+  align-items: center;
+}
+
+.SinglePost-author-left {
+  display: flex;
   align-items: center;
 }
 
