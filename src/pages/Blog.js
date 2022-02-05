@@ -40,32 +40,35 @@ const Blog = () => {
         <div className='Blog-container'>
           {postData &&
             postData.map((post, index) => (
-              <article key={index} className='Blog-card'>
-                <Link to={'/blog/' + post.slug.current} key={post.slug.current}>
-                  <span key={index}>
-                    <div
-                      className='Blog-image'
-                      style={{
-                        background: `url(${post.mainImage.asset.url}) no-repeat center center/cover`,
-                        width: '100%',
-                        height: '200px',
-                      }}
-                    ></div>
-                    <div className='Blog-card-container'>
-                      <span>
-                        <h3>{post.title}</h3>
-                      </span>
-                      <span className='Blog-content'>
-                        <BlockContent
-                          blocks={post.body}
-                          projectId='8rk8cdbm'
-                          dataset='production'
-                        />
-                      </span>
-                    </div>
-                  </span>
-                </Link>
-              </article>
+              <Link
+                to={'/blog/' + post.slug.current}
+                key={post.slug.current}
+                className='Blog-card'
+              >
+                <span key={index}>
+                  <div
+                    className='Blog-image'
+                    style={{
+                      background: `url(${post.mainImage.asset.url}) no-repeat center center/cover`,
+                      width: '100%',
+                      height: '200px',
+                    }}
+                  ></div>
+                  <div className='Blog-card-container'>
+                    <span>
+                      <h3>{post.title}</h3>
+                    </span>
+                    <span className='Blog-content'>
+                      <BlockContent
+                        blocks={post.body}
+                        projectId='8rk8cdbm'
+                        dataset='production'
+                      />
+                    </span>
+                  </div>
+                </span>
+                <p className='Blog-link'>Read More</p>
+              </Link>
             ))}
         </div>
       </div>
