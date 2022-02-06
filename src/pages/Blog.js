@@ -32,7 +32,7 @@ const Blog = () => {
   return (
     <div className='Blog'>
       <div className='Blog-header'>
-        <h1 className='cinzel-bold-56 text-dark-silver'>
+        <h1 className='cinzel-regular-30 text-dark-silver'>
           Welcome to the Vegas Luxury Home Tours Blog
         </h1>
       </div>
@@ -43,8 +43,7 @@ const Blog = () => {
               <Link
                 to={'/blog/' + post.slug.current}
                 key={post.slug.current}
-                className='Blog-card'
-              >
+                className='Blog-card'>
                 <span key={index}>
                   <div
                     className='Blog-image'
@@ -52,8 +51,7 @@ const Blog = () => {
                       background: `url(${post.mainImage.asset.url}) no-repeat center center/cover`,
                       width: '100%',
                       height: '200px',
-                    }}
-                  ></div>
+                    }}></div>
                   <div className='Blog-card-container'>
                     <span>
                       <h3>{post.title}</h3>
