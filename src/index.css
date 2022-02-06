@@ -150,6 +150,12 @@ a {
   font-weight: bold;
 }
 
+.montserrat-light-12 {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 300;
+  font-size: 12px;
+}
+
 .montserrat-light-14 {
   font-family: 'Montserrat', sans-serif;
   font-weight: 300;
@@ -188,6 +194,14 @@ a {
   padding: 168px 0;
 }
 
+.ml-16 {
+  margin-left: 16px;
+}
+
+.ml-32 {
+  margin-left: 32px;
+}
+
 .mt-16 {
   margin-top: 16px;
 }
@@ -198,6 +212,15 @@ a {
 
 .mt-64 {
   margin-top: 64px;
+}
+
+.mb-64 {
+  margin-bottom: 64px;
+}
+
+.mtb-64 {
+  margin-top: 64px;
+  margin-bottom: 64px;
 }
 
 .text-center {
