@@ -2,18 +2,11 @@ import { useState, useEffect } from 'react';
 import { Link, useParams } from 'react-router-dom';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faCalendar, faUser } from '@fortawesome/free-solid-svg-icons';
-import imageUrlBuilder from '@sanity/image-url';
 import BlockContent from '@sanity/block-content-to-react';
 
 import sanityClient from '../client';
 
 import './SinglePost.css';
-
-const builder = imageUrlBuilder(sanityClient);
-
-function urlFor(source) {
-  return builder.image(source);
-}
 
 const SinglePost = () => {
   const [singlePost, setSinglePost] = useState(null);
@@ -68,7 +61,8 @@ const SinglePost = () => {
           className='SinglePost-image mt-64'
           style={{
             background: `url(${singlePost.mainImage.asset.url})`,
-          }}></div>
+          }}
+        ></div>
       </div>
 
       <div className='SinglePost-body mb-64'>

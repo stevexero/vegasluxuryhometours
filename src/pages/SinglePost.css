@@ -12,7 +12,7 @@
 }
 
 .SinglePost-image {
-  width: 50vw;
+  width: 768px;
   height: 600px;
   background-position: center !important;
   background-repeat: no-repeat !important;
@@ -48,4 +48,5 @@
   font-family: 'Montserrat', sans-serif;
   font-size: 14px;
   line-height: 28px;
+  text-align: justify;
 }
