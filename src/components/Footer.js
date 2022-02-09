@@ -1,5 +1,4 @@
 import { Link } from 'react-router-dom';
-import { motion } from 'framer-motion';
 import { useMediaQuery } from 'react-responsive';
 import MailchimpSubscribe from 'react-mailchimp-subscribe';
 
@@ -23,30 +22,17 @@ const Footer = () => {
           <div className='Footer-head'>
             <SimpleForm onSubmitted={(formData) => subscribe(formData)} />
             {status === 'sending' && (
-              <div style={{ color: 'blue' }}>sending...</div>
+              <div style={{ color: 'white' }}>sending...</div>
             )}
             {status === 'error' && (
               <div
-                style={{ color: 'red' }}
+                style={{ color: 'white' }}
                 dangerouslySetInnerHTML={{ __html: message }}
               />
             )}
             {status === 'success' && (
-              <div style={{ color: 'green' }}>Subscribed !</div>
+              <div style={{ color: 'white' }}>Subscribed !</div>
             )}
-            <input type='text' placeholder='JOIN OUR MAILING LIST' />
-            <motion.button
-              whileHover={{
-                scale: 1.1,
-                transition: {
-                  duration: 0.2,
-                  type: 'spring',
-                },
-              }}
-              className='btn-footer alfa-slab-one-18'
-            >
-              SUBSCRIBE
-            </motion.button>
           </div>
         )}
       />
