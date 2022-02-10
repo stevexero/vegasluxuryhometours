@@ -52,6 +52,7 @@
 }
 
 .Blog-content div:first-child {
+  height: 80px;
   font-family: 'Montserrat', sans-serif !important;
   font-weight: 300 !important;
   font-size: 14px !important;
