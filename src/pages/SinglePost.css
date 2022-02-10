@@ -37,7 +37,7 @@
 }
 
 .SinglePost-body {
-  width: 768px;
+  max-width: 768px;
 }
 
 .SinglePost-body * {
@@ -49,4 +49,36 @@
   font-size: 14px;
   line-height: 28px;
   text-align: justify;
+}
+
+@media screen and (min-width: 414px) and (max-width: 768px) {
+  .SinglePost-header {
+    margin-top: 5rem;
+  }
+
+  .SinglePost-image {
+    width: 90vw;
+  }
+
+  .SinglePost-body {
+    width: 90vw;
+  }
+}
+
+@media screen and (max-width: 414px) {
+  .SinglePost-header {
+    margin-top: 5rem;
+  }
+
+  .SinglePost-header h1 {
+    font-size: 2rem;
+  }
+
+  .SinglePost-image {
+    width: 90vw;
+  }
+
+  .SinglePost-body {
+    width: 90vw;
+  }
 }
