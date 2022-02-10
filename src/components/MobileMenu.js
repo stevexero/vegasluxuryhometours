@@ -22,37 +22,50 @@ const MobileMenu = () => {
           exit={{
             x: '-110vw',
             transition: { duration: 0.5 },
-          }}>
+          }}
+        >
           <div className='MobileMenu-container'>
             <Link
               to='/'
               className='cinzel-regular-24 text-dark-silver'
-              onClick={toggleMenu}>
+              onClick={toggleMenu}
+            >
               Home
             </Link>
             <Link
               to='/about'
               className='cinzel-regular-24 text-dark-silver'
-              onClick={toggleMenu}>
+              onClick={toggleMenu}
+            >
               About
             </Link>
             <Link
               to='/contact'
               className='cinzel-regular-24 text-dark-silver'
-              onClick={toggleMenu}>
+              onClick={toggleMenu}
+            >
               Contact
+            </Link>
+            <Link
+              to='/blog'
+              className='cinzel-regular-24 text-dark-silver'
+              onClick={toggleMenu}
+            >
+              Blog
             </Link>
             <Link
               to='/book'
               className='cinzel-regular-24 text-dark-silver'
-              onClick={toggleMenu}>
+              onClick={toggleMenu}
+            >
               Book Now
             </Link>
             <a
               href='https://www.instagram.com/lasvegasluxuryhometours/'
               target='_blank'
               rel='noreferrer'
-              onClick={toggleMenu}>
+              onClick={toggleMenu}
+            >
               <img src={IgLogo} alt='instagram' width='29px' />
             </a>
           </div>

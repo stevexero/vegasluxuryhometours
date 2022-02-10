@@ -1,6 +1,6 @@
 .About {
   width: 100vw;
-  height: 100vh;
+  min-height: 100vh;
   background: var(--color-light-gold);
   display: flex;
   align-items: center;
@@ -25,7 +25,6 @@
 
 @media screen and (min-width: 414px) and (max-width: 768px) {
   .About {
-    height: 120vh;
     background: white;
     align-items: flex-end;
   }
@@ -41,6 +40,7 @@
 
   .About-container p {
     padding: 0;
+    margin-top: 4rem;
     margin-bottom: 2rem;
     text-align: justify;
   }
@@ -52,7 +52,6 @@
 
 @media screen and (min-width: 321px) and (max-width: 414px) {
   .About {
-    height: 840px;
     background: white;
     align-items: flex-end;
   }
@@ -68,6 +67,7 @@
 
   .About-container p {
     padding: 0;
+    margin-top: 4rem;
     margin-bottom: 2rem;
     text-align: justify;
   }
@@ -79,7 +79,6 @@
 
 @media screen and (max-width: 320px) {
   .About {
-    height: 800px;
     background: white;
     align-items: flex-end;
   }
@@ -95,6 +94,7 @@
 
   .About-container p {
     padding: 0;
+    margin-top: 4rem;
     margin-bottom: 2rem;
     text-align: justify;
   }

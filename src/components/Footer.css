@@ -6,12 +6,6 @@
   justify-content: space-between;
 }
 
-/* .Footer-head {
-  width: 1100px;
-  display: flex;
-  position: relative;
-} */
-
 .Footer-head div {
   width: 1100px;
   display: flex;
@@ -35,7 +29,6 @@
   outline: none;
 }
 
-/* .btn-footer { */
 .Footer-head div button {
   width: 350px;
   padding: 1rem;
@@ -97,8 +90,8 @@
   text-align: center;
 }
 
-@media screen and (max-width: 1100px) {
-  .Footer-head {
+@media screen and (min-width: 769px) and (max-width: 1100px) {
+  .Footer-head div {
     width: 900px;
   }
 
@@ -113,29 +106,29 @@
 
 /* MOBILE */
 @media screen and (max-width: 768px) {
-  .Footer-head {
+  .Footer {
+    display: block;
+  }
+
+  .Footer-head div {
     width: 100%;
     padding: 0 2rem;
     flex-direction: column;
   }
 
-  .Footer-head input[type='text'] {
+  .Footer-head div input[type='email'] {
     font-size: 1rem;
   }
 
-  .btn-footer {
+  .Footer-head div button {
     width: 100%;
     margin-top: 1rem;
     position: relative;
   }
 
-  .btn-footer {
-    position: relative;
-  }
-
   .Footer-body {
     width: 77%;
-    /* margin-left: 5rem; */
+    margin-left: 2rem;
     flex-direction: column;
   }
 
