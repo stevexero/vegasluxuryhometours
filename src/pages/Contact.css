@@ -1,12 +1,12 @@
 .Contact {
   width: 100vw;
-  height: 100vh;
+  min-height: 100vh;
   background: var(--color-light-gold);
 }
 
 .Contact-container {
   width: 100%;
-  height: 100%;
+  /* height: 100%; */
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -15,6 +15,7 @@
 
 .Contact-top {
   width: 100%;
+  margin-top: 10rem;
   text-align: center;
 }
 
@@ -44,6 +45,7 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  margin-bottom: 2rem;
 }
 
 .Contact-left form input,
@@ -112,4 +114,45 @@
 .Contact-right-top h3,
 .Contact-right-bottom h3 {
   margin-bottom: 2rem;
+}
+
+.Contact-right-bottom h3 {
+  margin-top: 2rem;
+}
+
+@media screen and (max-width: 768px) {
+  .Contact-top {
+    margin-top: 5rem;
+  }
+
+  .Contact-bottom {
+    flex-direction: column;
+  }
+
+  .Contact-left {
+    width: 100%;
+  }
+
+  .Contact-right {
+    width: 100%;
+    margin-left: 4rem;
+    margin-top: 5rem;
+    margin-bottom: 5rem;
+  }
+
+  .Contact-left form {
+    margin-bottom: 0;
+  }
+}
+
+@media screen and (max-width: 414px) {
+  .Contact-right-top h3,
+  .Contact-right-bottom h3 {
+    font-size: 1rem;
+  }
+
+  .Contact-right-top a,
+  .Contact-right-bottom a {
+    font-size: 0.85rem;
+  }
 }

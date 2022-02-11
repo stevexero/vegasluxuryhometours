@@ -34,10 +34,11 @@ const Contact = () => {
         opacity: 0,
         transition: { duration: 0.5 },
       }}
-      className='Contact'>
+      className='Contact'
+    >
       <div className='Contact-container'>
-        <div className='Contact-top mt-64'>
-          <h1 className='cinzel-regular-56 text-dark-silver'>Contact Us</h1>
+        <div className='Contact-top'>
+          <h1 className='cinzel-regular-30 text-dark-silver'>Contact Us</h1>
           <h4 className='text-dark-silver mt-32'>
             Fill out the form below, call, or send an email with questions,
             comments, concerns, or to set up a custom tour.
@@ -52,7 +53,8 @@ const Contact = () => {
               <textarea
                 name='message'
                 required
-                placeholder='Message'></textarea>
+                placeholder='Message'
+              ></textarea>
               <button className='alfa-slab-one-18'>SEND</button>
             </form>
           </div>
@@ -67,7 +69,8 @@ const Contact = () => {
               <h3 className='cinzel-regular-30 text-dark-silver'>email</h3>
               <a
                 href='mailto:vegasluxuryhometours@aol.com'
-                className='cinzel-regular-24'>
+                className='cinzel-regular-24'
+              >
                 vegasluxuryhometours@aol.com
               </a>
             </div>
