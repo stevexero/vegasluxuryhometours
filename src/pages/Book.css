@@ -22,12 +22,13 @@
   }
 }
 
-@media screen and (max-width: 375px) {
+@media screen and (max-width: 414px) {
   .Book {
     background: white;
   }
 
   .Book-container {
-    width: 100%;
+    width: 90%;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.25);
   }
 }
