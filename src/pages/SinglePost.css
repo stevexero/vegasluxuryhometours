@@ -51,13 +51,17 @@
   text-align: justify;
 }
 
+.SinglePost-body img {
+  width: 100%;
+}
+
 @media screen and (min-width: 414px) and (max-width: 768px) {
   .SinglePost-header {
     margin-top: 5rem;
   }
 
   .SinglePost-image {
-    width: 90vw;
+    width: 100%;
   }
 
   .SinglePost-body {
@@ -75,7 +79,7 @@
   }
 
   .SinglePost-image {
-    width: 90vw;
+    width: 100%;
   }
 
   .SinglePost-body {
