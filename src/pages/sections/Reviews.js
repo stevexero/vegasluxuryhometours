@@ -37,7 +37,7 @@ const Reviews = () => {
   };
 
   return (
-    <div className='Reviews'>
+    <div className='Reviews' id='reviews'>
       <Parallax bgImage={ReviewsBackground} strength={500}>
         <div
           style={{

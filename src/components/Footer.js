@@ -3,6 +3,8 @@ import { useMediaQuery } from 'react-responsive';
 import MailchimpSubscribe from 'react-mailchimp-subscribe';
 
 import IgLogo from '../assets/ig.png';
+import YouTubeLogo from '../assets/youtube.png';
+import TikTokLogo from '../assets/tiktok.png';
 
 import './Footer.css';
 
@@ -46,6 +48,22 @@ const Footer = () => {
             className='mt-16'
           >
             <img src={IgLogo} alt='instagram' width='29px' />
+          </a>
+          <a
+            href='https://www.youtube.com/channel/UC7EEt0BXJDJIgfGKEHzeVKw'
+            target='_blank'
+            rel='noreferrer'
+            className='mt-16'
+          >
+            <img src={YouTubeLogo} alt='youtube' width='29px' />
+          </a>
+          <a
+            href='https://www.tiktok.com/@las_vegasrealestate?_t=ZT-8wME5QcigEV&_r=1'
+            target='_blank'
+            rel='noreferrer'
+            className='mt-16'
+          >
+            <img src={TikTokLogo} alt='tiktok' width='29px' />
           </a>
         </div>
         <div className='Footer-body-center'>
