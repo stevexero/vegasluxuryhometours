@@ -46,13 +46,13 @@ const MobileMenu = () => {
             >
               Contact
             </Link>
-            <Link
+            {/* <Link
               to='/blog'
               className='cinzel-regular-24 text-dark-silver'
               onClick={toggleMenu}
             >
               Blog
-            </Link>
+            </Link> */}
             <Link
               to='/book'
               className='cinzel-regular-24 text-dark-silver'
