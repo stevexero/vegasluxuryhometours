@@ -54,6 +54,7 @@ const Footer = () => {
             target='_blank'
             rel='noreferrer'
             className='mt-16'
+            style={{ marginLeft: '8px' }}
           >
             <img src={YouTubeLogo} alt='youtube' width='29px' />
           </a>
@@ -62,6 +63,7 @@ const Footer = () => {
             target='_blank'
             rel='noreferrer'
             className='mt-16'
+            style={{ marginLeft: '8px' }}
           >
             <img src={TikTokLogo} alt='tiktok' width='29px' />
           </a>

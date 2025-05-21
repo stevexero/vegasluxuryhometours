@@ -71,8 +71,8 @@ const Navbar = () => {
       ) : (
         <div className='Navbar-container'>
           <div className='Navbar-left'>
-            <Link className='rajdhani-bold-24 nav-link' to='#reviews'>
-              Reviews
+            <Link className='rajdhani-bold-24 nav-link' to='/'>
+              Home
             </Link>
             <Link className='rajdhani-bold-24 nav-link' to='/about'>
               About

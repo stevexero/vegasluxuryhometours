@@ -15,7 +15,8 @@ const About = () => {
       exit={{
         opacity: 0,
         transition: { duration: 0.5 },
-      }}>
+      }}
+    >
       <div className='About-container'>
         <p className='montserrat-regular-14 text-dark-silver'>
           <span className='allura-regular-36'>Erica </span> is a licensed home
@@ -28,11 +29,17 @@ const About = () => {
           <br />
           <Link
             to='/contact'
-            className='page-link cinzel-decorative-bold-18 text-dark-gold mt-32'>
+            className='page-link cinzel-decorative-bold-18 text-dark-gold mt-32'
+          >
             Contact Erica
           </Link>
         </p>
-        <img src={AboutPhoto} alt='Erica Profile' className='About-photo' />
+        <img
+          src={AboutPhoto}
+          alt='Erica Profile'
+          className='About-photo'
+          style={{ objectFit: 'cover' }}
+        />
       </div>
     </motion.div>
   );
