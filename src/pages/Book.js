@@ -53,7 +53,7 @@ const Book = () => {
             </div>
             <div className='price-table-body'>
               <p>Up to 4 guests</p>
-              <p>from $74</p>
+              <p>from $84</p>
             </div>
             <p className='small-text'>
               Final price will be determined by the number of guests.
