@@ -43,7 +43,7 @@ const Book = () => {
             </div>
             <div className='price-table-body'>
               <p>Child (ages 4-12)</p>
-              <p>from $68</p>
+              <p>from $78</p>
             </div>
           </div>
           <hr />
